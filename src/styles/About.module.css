@@ -1,0 +1,74 @@
+.header {
+  text-align: center;
+  font-family: tahoma;
+  padding-bottom: 20px;
+  color: #e0dcd9;
+}
+.container {
+  margin-top: 10px;
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #6e7f62;
+  color: #e0dcd9;
+  width: 100vw;
+  text-align: justify;
+  height: 100vh;
+  gap: 1%;
+}
+.text {
+  width: 30%;
+}
+.image {
+  background: url(../../public/images/dora-i-pas.jpg) no-repeat center
+    center/cover;
+  width: 520px;
+  height: 600px;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #6e7f62;
+    line-height: 1.5;
+    color: antiquewhite;
+    color: #e0dcd9;
+  }
+
+  .text {
+    width: 100%;
+    padding: 10px 20px 15px;
+    background-color: #6e7f62;
+  }
+}
+
+@media (max-width: 580px) {
+  .image {
+    width: 400px;
+    height: 500px;
+  }
+  .text {
+    width: 100%;
+    height: 100%;
+    padding: 5px 24px;
+    background-color: #6e7f62;
+  }
+}
+@media (max-width: 430px) {
+  .image {
+    width: 300px;
+    height: 400px;
+  }
+  .text {
+    width: 100%;
+    height: 100%;
+    padding: 5px 22px;
+    text-align: justify;
+    background-color: #6e7f62;
+  }
+}

@@ -1,0 +1,32 @@
+.list {
+  align-self: center;
+}
+
+.list ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.list li {
+  padding: 10px 20px;
+  color: #6e7f62;
+  font-size: 16px;
+  cursor: pointer;
+}
+.list li:hover {
+  color: lightcoral;
+  transition: all 500ms;
+}
+
+@media (max-width: 1024px) {
+  .list ul {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .list li {
+    padding: 25px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

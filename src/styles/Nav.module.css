@@ -1,0 +1,75 @@
+.navList {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.navList a {
+  padding: 5px 45px;
+  color: #6e7f62;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.navDiv {
+  display: inline-block;
+}
+
+.navList button:hover {
+  color: #919f88;
+  transition: all 500ms;
+}
+
+.dropdownMenu {
+  position: absolute;
+  z-index: 1000;
+  padding: 7px 12px;
+  margin-left: 35px;
+  list-style-type: none;
+  background: #919f88;
+  border-radius: 5px;
+  color: white;
+  width: 160px;
+}
+.dropdownMenu ul {
+  list-style-type: none;
+}
+.dropdownMenu li {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 3px;
+}
+
+.dropdownMenu li:hover {
+  color: #6e7f62;
+  background-color: #e0dcd9;
+  transition: all 300ms;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+.dropdownMenu li:nth-child(1):hover {
+  color: #6e7f62;
+  background-color: #e0dcd9;
+  transition: all 300ms;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+.dropdownMenu li:nth-child(3):hover,
+.dropdownMenu li:nth-child(4):hover,
+.dropdownMenu li:nth-child(6):hover {
+  color: #6e7f62;
+  background-color: #e0dcd9;
+  transition: all 300ms;
+  padding: 7px 25px;
+  border-radius: 5px;
+}
+.dropdownMenu li:last-child {
+  padding-bottom: 5px;
+}
+@media (max-width: 1024px) {
+  .navList {
+    display: none;
+    overflow: none;
+    width: 0;
+  }
+}
