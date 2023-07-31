@@ -3,13 +3,16 @@
 }
 .navList a {
   padding: 5px 45px;
-  color: #6e7f62;
+  color: rgba(110, 127, 98, 0.725);
   border: none;
   background: none;
   cursor: pointer;
   font-size: 15px;
 }
-
+.navList a:hover {
+  transition: all 0.5s ease-in-out;
+  color: #6e7f62;
+}
 .navDiv {
   display: inline-block;
 }

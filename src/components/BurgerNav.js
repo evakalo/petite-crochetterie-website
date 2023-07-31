@@ -24,7 +24,17 @@ const BurgerNav = () => {
       {!isMenuOpen && <LuAlignLeft className={burgerStyles.burger} />}
 
       {isMenuOpen && (
-        <div className={burgerStyles.nav}>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          exit={{ left: 0, opacity: 0, backgroundColor: "#9f9688" }}
+          transition={{ delay: 0.2 }}
+          className={burgerStyles.nav}
+        >
           <ul>
             <LuArrowLeftCircle className={burgerStyles.arrow} />
             <li>
@@ -49,7 +59,7 @@ const BurgerNav = () => {
                     backgroundColor: "#9f9688",
                   }}
                   exit={{ left: 0, opacity: 0 }}
-                  transition={{ delay: 0 }}
+                  transition={{ delay: 0.2 }}
                   className={burgerStyles.dropMenu}
                 >
                   <ul>
@@ -81,7 +91,7 @@ const BurgerNav = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </motion.div>
       )}
     </nav>
   );
