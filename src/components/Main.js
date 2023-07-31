@@ -10,6 +10,10 @@ export default function Main() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ delay: 0.11 }}
+          whileHover={{
+            borderRadius: "5px",
+            opacity: 0.7,
+          }}
           className={categoriesStyles.imageContainer}
         >
           <h2>Toys (0-3 )</h2>
@@ -19,7 +23,11 @@ export default function Main() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ delay: 0.15 }}
+          transition={{ delay: 0.22 }}
+          whileHover={{
+            borderRadius: "5px",
+            opacity: 0.7,
+          }}
           className={categoriesStyles.imageContainer}
         >
           <h2>Toys (3+)</h2>
@@ -30,6 +38,10 @@ export default function Main() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ delay: 0.25 }}
+          whileHover={{
+            borderRadius: "5px",
+            opacity: 0.7,
+          }}
           className={categoriesStyles.imageContainer}
         >
           <h2>Home decor</h2>
@@ -40,6 +52,10 @@ export default function Main() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ delay: 0.25 }}
+          whileHover={{
+            borderRadius: "5px",
+            opacity: 0.7,
+          }}
           className={categoriesStyles.imageContainer}
         >
           <h2>Jewellery</h2>
@@ -50,6 +66,10 @@ export default function Main() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ delay: 0.25 }}
+          whileHover={{
+            borderRadius: "5px",
+            opacity: 0.7,
+          }}
           className={categoriesStyles.imageContainer}
         >
           <h2>Clothes</h2>
@@ -60,6 +80,10 @@ export default function Main() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ delay: 0.25 }}
+          whileHover={{
+            borderRadius: "5px",
+            opacity: 0.7,
+          }}
           className={categoriesStyles.imageContainer}
         >
           <h2>Accessories</h2>
