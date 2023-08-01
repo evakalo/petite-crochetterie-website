@@ -44,13 +44,14 @@
     font-size: 15px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 520px) {
   .container {
     margin-top: 15px;
     width: 85%;
     height: 70vh;
-    justify-content: flex-start;
-    padding-top: 70px;
+    justify-content: center;
+    background: url("../../public/images/cute.jpg") no-repeat center
+      center/cover;
   }
   .container button {
     padding: 15px;
@@ -64,7 +65,8 @@
   .container p {
     margin-left: 20px;
     font-size: 14px;
-    width: 40%;
-    font-weight: 400;
+    width: 60%;
+    margin-top: 200px;
+    font-weight: 500;
   }
 }
