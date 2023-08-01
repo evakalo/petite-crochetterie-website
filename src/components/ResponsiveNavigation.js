@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 import BurgerNav from "./BurgerNav";
-import Nav from "./Nav";
+//import Nav from "./Nav";
 import Navigation from "./Navigation";
 
 const ResponsiveNavigation = () => {
