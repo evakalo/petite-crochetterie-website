@@ -8,14 +8,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const BurgerNav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isDropMenuShown, setIsDropMenuShown] = useState(false);
+  // const [isDropMenuShown, setIsDropMenuShown] = useState(false); //vrati ovo ako ces imati submenu
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-  const toggleDropdown = (e) => {
-    e.stopPropagation();
-    setIsDropMenuShown(!isDropMenuShown);
-  };
+  // const toggleDropdown = (e) => {
+  //   e.stopPropagation();
+  //   setIsDropMenuShown(!isDropMenuShown); //vrati ovo ako ces imati submenu
+  // };
   return (
     <nav
       className={`burgerStyles.wrapper open_sans.className`}
