@@ -1,0 +1,70 @@
+.container {
+  background: url("../../public/images/background-toys.jpg") no-repeat center
+    center/cover;
+  width: 60%;
+  margin: 0 auto;
+  height: 75vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+  font-family: verdana;
+  border-radius: 5px;
+}
+.container button {
+  padding: 20px;
+  background-color: #6e7f62;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 60px;
+}
+.container p {
+  margin-left: 60px;
+  width: 40%;
+  font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 15px;
+    width: 80%;
+    height: 70vh;
+    justify-content: baseline;
+  }
+}
+
+@media (max-width: 860px) {
+  .container {
+    margin-top: 15px;
+    width: 85%;
+    height: 70vh;
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin-top: 15px;
+    width: 85%;
+    height: 70vh;
+    justify-content: flex-start;
+    padding-top: 70px;
+  }
+  .container button {
+    padding: 15px;
+    background-color: #6e7f62;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .container p {
+    margin-left: 20px;
+    font-size: 14px;
+    width: 40%;
+    font-weight: 400;
+  }
+}

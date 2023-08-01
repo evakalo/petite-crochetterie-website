@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
-import Home from "./components/Home";
+//import Home from "./components/Home";
+import HomePage from "./components/HomePage";
 import Main from "./components/Main";
 import About from "./components/About";
 
@@ -15,7 +16,7 @@ root.render(
     <BrowserRouter>
       <Layout />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<HomePage />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/categories" element={<Main />} />
       </Routes>
