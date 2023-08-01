@@ -1,6 +1,6 @@
 .gallery {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3%;
@@ -8,12 +8,13 @@
   /* pazi padding top ako dodajes jos itema */
 
   padding-top: 5px;
-  height: 100vh;
+  height: 90vh;
   color: antiquewhite;
 }
 .imageContainer {
   flex-basis: 31%;
   height: 60%;
+
   padding: 1%;
   display: flex;
   flex-direction: column;
@@ -54,8 +55,7 @@
   background: url(../../public/images/Decor.jpg) no-repeat center center/cover;
 }
 .imageContainer:nth-of-type(7) {
-  background: url(../../public/images/tiny-bear.jpg) no-repeat center
-    center/cover;
+  background: url(../../public/images/Decor.jpg) no-repeat center center/cover;
 }
 .imageContainer:hover {
   transition: font-size 0.4s ease-in;
@@ -63,6 +63,10 @@
 }
 
 @media (max-width: 700px) {
+  .imageContainer:hover {
+    transition: none;
+    z-index: -1;
+  }
   .imageContainer {
     flex-basis: 100%;
   }

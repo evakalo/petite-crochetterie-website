@@ -51,7 +51,7 @@ export default function Main() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ delay: 0.25 }}
+          transition={{ delay: 0.27 }}
           whileHover={{
             borderRadius: "5px",
             opacity: 0.7,
@@ -65,7 +65,7 @@ export default function Main() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ delay: 0.25 }}
+          transition={{ delay: 0.29 }}
           whileHover={{
             borderRadius: "5px",
             opacity: 0.7,
@@ -79,7 +79,7 @@ export default function Main() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ delay: 0.25 }}
+          transition={{ delay: 0.33 }}
           whileHover={{
             borderRadius: "5px",
             opacity: 0.7,

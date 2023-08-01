@@ -29,6 +29,7 @@ const Nav = () => {
           >
             <ul>
               <li>Clothes - adults</li>
+
               <li>Clothes - kids</li>
               <li>Toys (0-3)</li>
               <li>Toys(3+)</li>

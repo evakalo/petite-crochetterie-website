@@ -8,13 +8,32 @@
   background: none;
   cursor: pointer;
   font-size: 15px;
+  font-variant: small-caps;
 }
 .navList a:hover {
   transition: all 0.5s ease-in-out;
   color: #6e7f62;
 }
+
 .navDiv {
   display: inline-block;
+}
+.underline {
+  position: absolute;
+
+  top: 100%;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 4px;
+
+  border-radius: 15px;
+
+  background: white;
+
+  opacity: 0.85;
 }
 
 .navList button:hover {

@@ -15,6 +15,7 @@
 }
 .list li:hover {
   color: lightcoral;
+  color: rosybrown;
   transition: all 500ms;
 }
 

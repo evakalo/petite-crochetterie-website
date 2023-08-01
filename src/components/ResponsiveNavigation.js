@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import BurgerNav from "./BurgerNav";
 import Nav from "./Nav";
+import Navigation from "./Navigation";
 
 const ResponsiveNavigation = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -24,7 +25,7 @@ const ResponsiveNavigation = () => {
     };
   }, []);
 
-  return isMobile ? <BurgerNav /> : <Nav />;
+  return isMobile ? <BurgerNav /> : <Navigation />;
 };
 
 export default ResponsiveNavigation;

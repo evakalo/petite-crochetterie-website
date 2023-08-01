@@ -4,6 +4,9 @@
   padding-bottom: 20px;
   color: #e0dcd9;
 }
+.container h2 {
+  font-variant: small-caps;
+}
 .container {
   margin-top: 10px;
   padding: 4rem 0;
@@ -20,6 +23,7 @@
 }
 .text {
   width: 30%;
+  line-height: 1.5;
 }
 .image {
   background: url(../../public/images/dora-i-pas.jpg) no-repeat center

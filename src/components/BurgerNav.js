@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SlArrowRight } from "react-icons/sl";
+// import { SlArrowRight } from "react-icons/sl"; dodaj ako ces stavljati kategorije u burger bar
 import burgerStyles from "../styles/Burger.module.css";
 import { LuAlignLeft, LuArrowLeftCircle } from "react-icons/lu";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 const BurgerNav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isDropMenuShown, setIsDropMenuShown] = useState(false);
@@ -46,8 +46,10 @@ const BurgerNav = () => {
               className={burgerStyles.dropMenuWrapper}
               onClick={toggleDropdown}
             >
-              <p>Categories </p>
-              {isDropMenuShown && (
+              <Link to="/categories">
+                <p>Categories </p>
+              </Link>
+              {/* {isDropMenuShown && (
                 <motion.div
                   initial={{
                     left: 0,
@@ -73,7 +75,7 @@ const BurgerNav = () => {
                 </motion.div>
               )}
 
-              <SlArrowRight />
+              <SlArrowRight /> */}
             </li>
             <li>
               <a href="/about" className={burgerStyles.underline}>
