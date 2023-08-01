@@ -25,10 +25,10 @@ const menuItems = [
 const UnderlinedMenu = () => {
   const [selected, setSelected] = useState(0);
 
-  const handleDropdownItemClick = (action) => {
-    // Implement the logic for handling the dropdown item click here.
-    console.log("Dropdown item clicked:", action);
-  };
+  // const handleDropdownItemClick = (action) => {
+  //   // Implement the logic for handling the dropdown item click here.
+  //   console.log("Dropdown item clicked:", action);
+  // };
 
   return (
     <motion.div className={navigationStyles.wrapper}>
