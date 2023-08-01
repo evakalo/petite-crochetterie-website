@@ -1,4 +1,4 @@
-.header {
+/* .header {
   text-align: center;
   font-family: tahoma;
   padding-bottom: 20px;
@@ -6,59 +6,72 @@
 }
 .container h2 {
   font-variant: small-caps;
-}
+} */
 .container {
   margin-top: 10px;
   padding: 4rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-start;
-  background-color: #6e7f62;
+  align-items: center;
+  background-color: #6e7f629e;
+
   color: #e0dcd9d2;
   width: 100vw;
   text-align: justify;
-  height: 100vh;
-  gap: 1%;
 }
 .text {
-  width: 30%;
+  width: 40%;
   line-height: 1.5;
 }
 .image {
-  background: url(../../public/images/dora-i-pas.jpg) no-repeat center
-    center/cover;
+  background: url(../../public/images/logo.jpg) no-repeat center center/cover;
   width: 520px;
   height: 600px;
 }
 @media (max-width: 1024px) {
   .container {
-    padding: 4rem 0;
-    display: flex;
-    flex-wrap: wrap;
+    padding-top: 2rem;
+
+    height: 100%;
+    background-color: #e0dcd9;
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: flex-start;
-    background-color: #6e7f62;
-    line-height: 1.5;
+    align-items: center;
+    gap: 0;
   }
 
   .text {
-    width: 100%;
+    width: 80%;
     padding: 10px 20px 15px;
-    background-color: #6e7f62;
+    background-color: #6e7f62b3;
+    border-radius: 5px;
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 620px) {
+  .container {
+    padding-top: 1rem;
+    height: 100%;
+    background-color: #e0dcd9;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
   .image {
-    width: 400px;
-    height: 500px;
+    background: url(../../public/images/logo.jpg) no-repeat center center/cover;
+    width: 300px;
+    height: 300px;
   }
   .text {
-    width: 100%;
+    width: 80%;
+    border-radius: 10px;
     height: 100%;
-    padding: 5px 24px;
-    background-color: #6e7f62;
+    padding: 10px 24px;
+    font-size: 14px;
+    background-color: #6e7f62a7;
+    /* background-color: rgba(188, 143, 143, 0.672); */
   }
 }
 @media (max-width: 430px) {

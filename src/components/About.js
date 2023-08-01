@@ -12,7 +12,7 @@ function About() {
           transition={{ delay: 0.33 }}
           className={styles.text}
         >
-          <h2>Petite Crochetterie </h2>
+          {/* <h2>Petite Crochetterie </h2> */}
           <p>
             {" "}
             Welcome to Petite Crochetterie, an Edinburgh-based crochet business
