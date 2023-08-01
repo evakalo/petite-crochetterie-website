@@ -44,7 +44,7 @@ const BurgerNav = () => {
             </li>
             <li
               className={burgerStyles.dropMenuWrapper}
-              onClick={toggleDropdown}
+              // onClick={toggleDropdown} // ako ces opet dodati kategorije
             >
               <Link to="/categories">
                 <p>Categories </p>
