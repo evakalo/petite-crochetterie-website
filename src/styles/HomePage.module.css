@@ -47,7 +47,7 @@
 @media (max-width: 620px) {
   .container {
     margin-top: 15px;
-    width: 85%;
+    width: 95%;
     height: 70vh;
     justify-content: center;
     background: url("../../public/images/cute.jpg") no-repeat center
