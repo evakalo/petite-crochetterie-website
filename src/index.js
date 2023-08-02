@@ -6,7 +6,7 @@ import "./index.css";
 import HomePage from "./components/HomePage";
 import Main from "./components/Main";
 import About from "./components/About";
-
+//import AboutPage from "./components/AboutPage";
 import Layout from "./components/Layout";
 import reportWebVitals from "./reportWebVitals";
 

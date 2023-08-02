@@ -5,15 +5,15 @@
   flex-wrap: wrap;
   gap: 3%;
   padding: 15px;
-  /* pazi padding top ako dodajes jos itema */
-
   padding-top: 5px;
   height: 90vh;
   color: antiquewhite;
+  /* pazi padding top ako dodajes jos itema */
 }
 .imageContainer {
   flex-basis: 31%;
   height: 60%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   padding: 1%;
   display: flex;
