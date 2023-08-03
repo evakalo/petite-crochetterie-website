@@ -13,11 +13,11 @@ const MenuItem = ({ text, selected, onClick, dropdownItems, linkTo }) => {
     }
   };
 
-  const handleDropdownItemClick = (action) => {
-    // Implement the logic for handling the dropdown item click here.
-    console.log("Dropdown item clicked:", action);
-    setShowDropdown(false);
-  };
+  // const handleDropdownItemClick = (action) => {
+  //   // Implement the logic for handling the dropdown item click here.
+  //   console.log("Dropdown item clicked:", action);
+  //   setShowDropdown(false);
+  // };
 
   return (
     <div className={navigationStyles.container}>
@@ -36,7 +36,7 @@ const MenuItem = ({ text, selected, onClick, dropdownItems, linkTo }) => {
           )}
         </motion.div>
       </Link>
-      {selected && showDropdown && dropdownItems && (
+      {/* {selected && showDropdown && dropdownItems && (
         <div className={navigationStyles.dropdown}>
           {dropdownItems.map((item, index) => (
             <div
@@ -48,7 +48,7 @@ const MenuItem = ({ text, selected, onClick, dropdownItems, linkTo }) => {
             </div>
           ))}
         </div>
-      )}
+      )} */}
     </div>
   );
 };

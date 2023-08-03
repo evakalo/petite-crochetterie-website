@@ -12,9 +12,7 @@ function About() {
           transition={{ delay: 0.33 }}
           className={styles.text}
         >
-          {/* <h2>Petite Crochetterie </h2> */}
           <p>
-            {" "}
             Welcome to Petite Crochetterie, an Edinburgh-based crochet business
             lovingly crafted by a passionate mom. At the heart of the crochet
             creations lies a blend of creativity and inspiration, resulting in

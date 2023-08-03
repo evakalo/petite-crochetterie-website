@@ -4,11 +4,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 //import Home from "./components/Home";
 import HomePage from "./components/HomePage";
-import Main from "./components/Main";
+import Categories from "./components/Categories";
 import About from "./components/About";
 //import AboutPage from "./components/AboutPage";
 import Layout from "./components/Layout";
 import reportWebVitals from "./reportWebVitals";
+import Contact from "./components/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +19,8 @@ root.render(
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/categories" element={<Main />} />
+        <Route exact path="/categories" element={<Categories />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

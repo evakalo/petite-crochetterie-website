@@ -32,37 +32,38 @@
 @media (max-width: 1024px) {
   .container {
     padding-top: 2rem;
-
     height: 100%;
     background-color: #e0dcd9;
-    flex-direction: column-reverse;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     gap: 0;
   }
 
   .text {
-    width: 80%;
+    width: 40%;
     padding: 10px 20px 15px;
     background-color: #6e7f62b3;
     border-radius: 5px;
   }
+  .image {
+    width: 50%;
+  }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .container {
     padding-top: 1rem;
     height: 100%;
     background-color: #e0dcd9;
-    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 0;
   }
   .image {
     background: url(../../public/images/logo.jpg) no-repeat center center/cover;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
   .text {
     width: 80%;

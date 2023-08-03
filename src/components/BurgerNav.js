@@ -37,19 +37,17 @@ const BurgerNav = () => {
         >
           <ul>
             <LuArrowLeftCircle className={burgerStyles.arrow} />
-            <li>
-              <a href="/" className={burgerStyles.underline}>
-                Home
-              </a>
-            </li>
-            <li
+            <Link to="/">
+              <li className={burgerStyles.underline}>Home</li>
+            </Link>
+            {/* <li
               className={burgerStyles.dropMenuWrapper}
               // onClick={toggleDropdown} // ako ces opet dodati kategorije
-            >
-              <Link to="/categories">
-                <p>Categories </p>
-              </Link>
-              {/* {isDropMenuShown && (
+            > */}
+            <Link to="/categories">
+              <li>Categories </li>
+            </Link>
+            {/* {isDropMenuShown && (
                 <motion.div
                   initial={{
                     left: 0,
@@ -76,22 +74,13 @@ const BurgerNav = () => {
               )}
 
               <SlArrowRight /> */}
-            </li>
-            <li>
-              <a href="/about" className={burgerStyles.underline}>
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                onClick={toggleMenu}
-                className={burgerStyles.underline}
-              >
-                {" "}
-                Contact
-              </a>
-            </li>
+            {/* </li> */}
+            <Link to="/about">
+              <li className={burgerStyles.underline}>About</li>
+            </Link>
+            <Link to="/contact">
+              <li className={burgerStyles.underline}> Contact</li>
+            </Link>
           </ul>
         </motion.div>
       )}

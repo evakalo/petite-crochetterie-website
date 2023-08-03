@@ -1,17 +1,51 @@
 import homepageStyles from "../styles/HomePage.module.css";
 import { Link } from "react-router-dom";
-
 const HomePage = () => {
+  const products = [
+    {
+      name: "Fox",
+      price: "20eur",
+      url: "../../images/fox.jpg",
+      alt: "Fox crochet toy",
+    },
+    {
+      name: "Polar bear",
+      price: "20eur",
+      url: "../../images/cute.jpg",
+      alt: "Polar bear crochet toy",
+    },
+    {
+      name: "Jellyfish earing",
+      price: "20eur",
+      url: "../../images/jellyfish.jpg",
+      alt: "Jellyfish crochet earing",
+    },
+    {
+      name: "Plant hanger",
+      price: "20eur",
+      url: "../../images/plant.jpg",
+      alt: "Crochet plant hanger",
+    },
+  ];
+
   return (
     <div className={homepageStyles.pageWrapper}>
       <div className={homepageStyles.container}>
-        <p>
-          Welcome to Petite Crochetterie, an crochet business lovingly crafted
-          by a passionate mom.
-        </p>
-        <button>
-          <Link to="/categories">Explore categories</Link>
-        </button>
+        <div className={homepageStyles.description}>
+          <p>
+            Welcome to Petite Crochetterie, an crochet business lovingly crafted
+            by a passionate mom.
+          </p>
+          <button>
+            <Link to="/categories">Explore categories</Link>
+          </button>{" "}
+        </div>
+        <div className={homepageStyles.imageContainer}>
+          <img
+            src="../../images/baby-bunny.jpg"
+            alt="table with tiny jellyfish crochet toys in jars"
+          ></img>
+        </div>
       </div>
       <div className={homepageStyles.about}>
         <p>
@@ -38,32 +72,14 @@ const HomePage = () => {
         </p>
       </div>
       <div className={homepageStyles.itemsContainer}>
-        <div className={homepageStyles.item}>
-          <img
-            src="../../images/fox.jpg"
-            title="Go to Etsy webshop"
-            alt="crochet fox "
-          />
+        {products.map((item, key) => (
+          <div key={key} className={homepageStyles.item}>
+            <img src={item.url} title="Go to Etsy webshop" alt={item.alt} />
 
-          <h3>Fox </h3>
-          <p>Price : 20 euros</p>
-        </div>
-        <div className={homepageStyles.item}>
-          <img src="../../images/cute.jpg" alt="crochet fox " />
-          <h3>Mouse </h3>
-          <p>Price : 20 euros</p>
-        </div>{" "}
-        <div className={homepageStyles.item}>
-          <img src="../../images/jellyfish.jpg" alt="crochet fox " />
-          <h3>Jellyfish earing </h3>
-          <p>Price : 20 euros</p>
-        </div>{" "}
-        <div className={homepageStyles.item}>
-          <img src="../../images/plant.jpg" alt="crochet fox " />
-
-          <h3>Plant hanger </h3>
-          <p>Price : 20 euros</p>
-        </div>{" "}
+            <h3>{item.name} </h3>
+            <p>Price : {item.price}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
