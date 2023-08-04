@@ -6,14 +6,10 @@ const Contact = () => {
   const [message, setMessage] = useState(false);
   return (
     <div className={contactStyles.wrapper}>
-      <motion.img
+      <img
         src="../../images/fox-big.jpg"
         alt="lalla"
         className={contactStyles.image}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ delay: 0.1 }}
       />
       {message === false ? (
         <form className={contactStyles.form}>
