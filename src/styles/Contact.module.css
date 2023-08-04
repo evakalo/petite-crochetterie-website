@@ -57,11 +57,61 @@ textarea:focus {
   transition: all 1s;
   cursor: pointer;
 }
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+  width: 45%;
+  color: #6e7f62;
+
+  padding: 20px 10px;
+}
+.message h1 {
+  color: #90abb0;
+  padding-bottom: 20px;
+}
+.message p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+.message button {
+  width: 40%;
+  padding: 15px;
+  background-color: #6e7f62;
+  color: #eee8e3;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+}
+
 @media (max-width: 1400px) {
   .image {
     width: 30%;
   }
 }
+@media (max-width: 1200px) {
+  .message button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .message h1 {
+    font-size: 27px;
+  }
+  .message p {
+    font-size: 16px;
+  }
+  .message button {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 800px) {
   .image {
     width: 35%;
@@ -82,6 +132,23 @@ textarea:focus {
     font-size: 14px;
   }
 }
+
+@media (max-width: 550px) {
+  .message {
+    padding: 5px 10px 10px;
+  }
+  .message h1 {
+    font-size: 20px;
+  }
+  .message p {
+    font-size: 15px;
+  }
+  .message button {
+    padding: 12px 5px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 490px) {
   .wrapper {
     display: flex;
@@ -111,5 +178,24 @@ textarea:focus {
   .form h2 {
     font-size: 19px;
     padding: 5px;
+  }
+
+  .message {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .message h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .message p {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+  .message button {
+    padding: 12px 5px;
+    width: 85%;
   }
 }

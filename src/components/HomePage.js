@@ -1,5 +1,6 @@
 import homepageStyles from "../styles/HomePage.module.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const HomePage = () => {
   const products = [
     {
@@ -32,10 +33,15 @@ const HomePage = () => {
     <div className={homepageStyles.pageWrapper}>
       <div className={homepageStyles.container}>
         <div className={homepageStyles.description}>
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.22 }}
+          >
             Welcome to Petite Crochetterie, an crochet business lovingly crafted
             by a passionate mom.
-          </p>
+          </motion.p>
           <button>
             <Link to="/categories">Explore categories</Link>
           </button>{" "}
