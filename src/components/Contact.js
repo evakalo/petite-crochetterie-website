@@ -8,7 +8,7 @@ const Contact = () => {
     <div className={contactStyles.wrapper}>
       <img
         src="../../images/fox-big.jpg"
-        alt="lalla"
+        alt=" toy fox in a box with envelopes"
         className={contactStyles.image}
       />
       {message === false ? (
