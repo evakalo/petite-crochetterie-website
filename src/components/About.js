@@ -42,6 +42,7 @@ function About() {
           </p>
         </div>{" "}
         <div className={styles.image}></div>
+        <div className={styles.image2}></div>
       </div>
     </div>
   );

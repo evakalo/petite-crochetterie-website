@@ -21,6 +21,7 @@ const Contact = () => {
           >
             Item you like is out of stock?
           </motion.h3>
+          <p>For custom orders get in touch</p>
           <h2>Contact me </h2>
           <input
             className={contactStyles.input}

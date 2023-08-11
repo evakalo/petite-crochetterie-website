@@ -38,6 +38,7 @@ const HomePage = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ delay: 0.22 }}
+            className={homepageStyles.header}
           >
             Welcome to Petite Crochetterie, an crochet business lovingly crafted
             by a passionate mom.

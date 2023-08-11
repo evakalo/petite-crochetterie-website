@@ -21,9 +21,15 @@
   color: #90abb0;
   padding: 10px 0px;
 }
+.form p {
+  color: #90abb0;
+  padding: 0;
+  margin: 0;
+}
 .form h2 {
   padding: 10px 0px;
 }
+
 .image {
   width: 25%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -173,8 +179,10 @@ textarea:focus {
     font-size: 18px;
     width: 90%;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0px 0px;
+    margin-top: 10px;
   }
+
   .form h2 {
     font-size: 19px;
     padding: 5px;
