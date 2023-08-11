@@ -33,7 +33,11 @@
   font-weight: 400;
   padding: 5px;
 }
-
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .imageContainer:first-of-type {
   background: url(../../public/images/Toys-0-3.jpg) no-repeat center
     center/cover;

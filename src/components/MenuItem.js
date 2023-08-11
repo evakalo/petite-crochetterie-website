@@ -13,12 +13,6 @@ const MenuItem = ({ text, selected, onClick, dropdownItems, linkTo }) => {
     }
   };
 
-  // const handleDropdownItemClick = (action) => {
-  //   // Implement the logic for handling the dropdown item click here.
-  //   console.log("Dropdown item clicked:", action);
-  //   setShowDropdown(false);
-  // };
-
   return (
     <div className={navigationStyles.container}>
       <Link to={linkTo}>

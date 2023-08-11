@@ -2,14 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
-//import Home from "./components/Home";
 import HomePage from "./components/HomePage";
 import Categories from "./components/Categories";
 import About from "./components/About";
-//import AboutPage from "./components/AboutPage";
 import Layout from "./components/Layout";
 import reportWebVitals from "./reportWebVitals";
 import Contact from "./components/Contact";
+import PhotoGallery from "./components/PhotoGallery";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +20,7 @@ root.render(
         <Route exact path="/about" element={<About />} />
         <Route exact path="/categories" element={<Categories />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route path="/categories/:categoryName" element={<PhotoGallery />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

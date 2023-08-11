@@ -8,15 +8,6 @@ const menuItems = [
   {
     text: "Categories",
     linkTo: "/categories",
-
-    // dropdownItems: [
-    //   { text: "Toys (0-3)", action: "Item 1" },
-    //   { text: "Toys(3+)", action: "Item 2" },
-    //   { text: "Home decor", action: "Item 3" },
-    //   { text: "Clothes kids", action: "Item 4" },
-    //   { text: "Clothes adults", action: "Item 5" },
-    //   { text: "Accessories", action: "Item 6" },
-    // ],
   },
   { text: "About", linkTo: "/about" },
   { text: "Contact", linkTo: "/contact" },
@@ -24,11 +15,6 @@ const menuItems = [
 
 const UnderlinedMenu = () => {
   const [selected, setSelected] = useState(0);
-
-  // const handleDropdownItemClick = (action) => {
-  //   // Implement the logic for handling the dropdown item click here.
-  //   console.log("Dropdown item clicked:", action);
-  // };
 
   return (
     <motion.div className={navigationStyles.wrapper}>

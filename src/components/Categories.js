@@ -1,33 +1,34 @@
 import categoriesStyles from "../styles/Categories.module.css";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export default function Categories() {
   const categories = [
     {
       name: "Toys(0-3)",
-      delay: 0.11,
+      link: "toys(0-3)",
     },
     {
       name: "Toys(3+)",
-      delay: 0.15,
+      link: "toys(3+)",
     },
     {
       name: "Home decor",
-      delay: 0.19,
+      link: "/decor",
     },
     {
       name: "Jewellery",
-      delay: 0.23,
+      link: "/jewellery",
     },
     {
       name: "Clothes",
-      delay: 0.27,
+      link: "/clothes",
     },
     {
       name: "Accesories",
-      delay: 0.31,
+      link: "/accessories",
     },
   ];
+  //add fadein effect with different delay times
   const variants = {
     hidden: { opacity: 0 },
     visible: (index) => ({
@@ -41,7 +42,7 @@ export default function Categories() {
   return (
     <main className={categoriesStyles.main}>
       <div className={categoriesStyles.gallery}>
-        {categories.map((item, index) => (
+        {categories.map((item, index, link) => (
           <motion.div
             key={index}
             variants={variants}
@@ -54,8 +55,13 @@ export default function Categories() {
             }}
             className={categoriesStyles.imageContainer}
           >
-            <h2>{item.name}</h2>
-            <h4>check collection</h4>
+            {" "}
+            <Link to={item.link}>
+              <div className={categoriesStyles.title}>
+                <h2>{item.name}</h2>
+                <h4>check collection</h4>
+              </div>
+            </Link>
           </motion.div>
         ))}
       </div>
