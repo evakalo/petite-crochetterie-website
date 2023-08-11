@@ -96,7 +96,7 @@ const PhotoGallery = () => {
   return (
     <div className={galleryStyles.wrapper}>
       {" "}
-      <h2>{categoryName}</h2>
+      <h1>{categoryName}</h1>
       <div className={galleryStyles.gallery}>
         {photos.map((photo, index, alt) => (
           <div key={index}>
