@@ -56,7 +56,7 @@ export default function Categories() {
             className={categoriesStyles.imageContainer}
           >
             {" "}
-            <Link to={item.link}>
+            <Link to={item.link} className={categoriesStyles.link}>
               <div className={categoriesStyles.title}>
                 <h2>{item.name}</h2>
                 <h4>check collection</h4>
