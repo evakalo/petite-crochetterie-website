@@ -2,32 +2,32 @@ import homepageStyles from "../styles/HomePage.module.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 const HomePage = () => {
-  const products = [
-    {
-      name: "Fox",
-      price: "20eur",
-      url: "../../images/fox.jpg",
-      alt: "Fox crochet toy",
-    },
-    {
-      name: "Polar bear",
-      price: "20eur",
-      url: "../../images/cute.jpg",
-      alt: "Polar bear crochet toy",
-    },
-    {
-      name: "Jellyfish earing",
-      price: "20eur",
-      url: "../../images/jellyfish.jpg",
-      alt: "Jellyfish crochet earing",
-    },
-    {
-      name: "Plant hanger",
-      price: "20eur",
-      url: "../../images/plant.jpg",
-      alt: "Crochet plant hanger",
-    },
-  ];
+  // const products = [
+  //   {
+  //     name: "Fox",
+  //     price: "20eur",
+  //     url: "../../images/fox.jpg",
+  //     alt: "Fox crochet toy",
+  //   },
+  //   {
+  //     name: "Polar bear",
+  //     price: "20eur",
+  //     url: "../../images/cute.jpg",
+  //     alt: "Polar bear crochet toy",
+  //   },
+  //   {
+  //     name: "Jellyfish earing",
+  //     price: "20eur",
+  //     url: "../../images/jellyfish.jpg",
+  //     alt: "Jellyfish crochet earing",
+  //   },
+  //   {
+  //     name: "Plant hanger",
+  //     price: "20eur",
+  //     url: "../../images/plant.jpg",
+  //     alt: "Crochet plant hanger",
+  //   },
+  // ];
 
   return (
     <div className={homepageStyles.pageWrapper}>
@@ -49,7 +49,7 @@ const HomePage = () => {
         </div>
         <div className={homepageStyles.imageContainer}>
           <img
-            src="../../images/baby-bunny.jpg"
+            src="../../images/cute.jpg"
             alt="table with tiny jellyfish crochet toys in jars"
           ></img>
         </div>
@@ -57,28 +57,29 @@ const HomePage = () => {
       <div className={homepageStyles.about}>
         <p>
           {" "}
-          Whether you're searching for a heartfelt gift or a little touch of
-          handmade charm, <strong>Petite Crochetterie</strong> is here to add a
-          *touch of magic* to your life.
+          Whether you're seeking a cuddly friend, a stylish cardigan, or a
+          unique décor piece, my creations are here to add a handcrafted charm
+          to your life. Explore the artistry of crochet and find treasures that
+          blend warmth, style, and playfulness in every stitch.
         </p>
         <div className={homepageStyles.aboutPhotos}>
           <img
             src="../../images/jellyfish-room.jpg"
             alt="table with tiny jellyfish crochet toys in jars"
           />
-          <img
-            src="../../images/yarn-best.jpg"
-            alt="yarn with pastel colours"
-          />
+          <img src="../../images/yarn-best.jpg" alt="yarn in  pastel colours" />
+
+          <img src="../../images/home-slika-3-crop.jpg" alt="plant hanger" />
+          <img src="../../images/home-slika-4.jpg" alt="dear crochet toy" />
         </div>
-        <p>
+        {/* <p>
           From cozy jumpers and whimsical amigurumi to stylish accessories, you
           are sure to find something you will love among these crochet wonders.
           Each piece is delicately crafted with care, ensuring the highest
           quality and attention to detail.
-        </p>
+        </p> */}
       </div>
-      <div className={homepageStyles.itemsContainer}>
+      {/* <div className={homepageStyles.itemsContainer}>
         {products.map((item, key) => (
           <div key={key} className={homepageStyles.item}>
             <img src={item.url} title="Go to Etsy webshop" alt={item.alt} />
@@ -87,7 +88,7 @@ const HomePage = () => {
             <p>Price : {item.price}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

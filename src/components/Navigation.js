@@ -24,7 +24,6 @@ const UnderlinedMenu = () => {
           key={i}
           selected={selected === i}
           onClick={() => setSelected(i)}
-          dropdownItems={item.dropdownItems}
           linkTo={item.linkTo}
         />
       ))}

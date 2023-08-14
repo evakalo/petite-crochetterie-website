@@ -28,13 +28,13 @@
   line-height: 1.5;
 }
 .image {
-  background: url(../../public/images/logo-edit.png) no-repeat center
+  background: url(../../public/images/about-fotka.jpg) no-repeat center
     center/cover;
-  background: url(../../public/images/dora3.jpg) no-repeat center center/contain;
   width: 30%;
   order: -1;
-
   height: 400px;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
 }
 .image2 {
   background: url(../../public/images/logo-edit.png) no-repeat center
@@ -46,9 +46,6 @@
 @media (max-width: 1290px) {
   .container {
     padding-top: 2rem;
-    /* height: 100%;
-    background-color: #e0dcd9; 
-    flex-direction: column; */
 
     justify-content: center;
     align-items: center;
@@ -65,55 +62,17 @@
     border-radius: 5px;
   }
   .image {
-    width: 50%;
+    width: 30%;
   }
   .image2 {
     width: 50%;
   }
 }
-/* 
-@media (max-width: 670px) {
-  .container {
-    padding-top: 1rem;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-  .image {
-    width: 350px;
-    height: 350px;
-    order: -1;
-  }
-  .image2 {
-    width: 350px;
-    height: 350px;
-    margin: 0px;
-    padding: 0px;
-  }
-  .container h2 {
-    width: 40%;
-    width: 90%;
-    font-size: 22px;
-    text-align: left;
-    padding: 20px 10px;
-    order: -2;
-    font-weight: 600;
-  }
-  .text {
-    width: 50%;
-    border-radius: 10px;
-    height: 100%;
-    padding: 10px 24px;
-    font-size: 16px;
-    /* background-color: rgba(188, 143, 143, 0.672); 
-  }
-} */
+
 @media (max-width: 830px) {
   .image {
-    width: 80%;
-    height: 300px;
+    width: 50%;
+    height: 500px;
     order: -1;
   }
   .container {
@@ -141,6 +100,14 @@
     margin: 0px 0px;
   }
 }
+@media (max-width: 620px) {
+  .image {
+    width: 60%;
+    height: 400px;
+    order: -1;
+    text-align: justify;
+  }
+}
 @media (max-width: 440px) {
   .container h2 {
     width: 80%;
@@ -153,12 +120,12 @@
     width: 80%;
     height: 100%;
     font-size: 15px;
-    padding: 10px;
+    padding: 5px;
     text-align: justify;
   }
   .image {
-    width: 90%;
-    height: 260px;
+    width: 60%;
+    height: 350px;
     order: -1;
     text-align: justify;
   }

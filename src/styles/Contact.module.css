@@ -20,10 +20,12 @@
 .form h3 {
   color: #90abb0;
   padding: 10px 0px;
+  font-size: 20px;
 }
 .form p {
   color: #90abb0;
   padding: 0;
+  font-size: 18px;
   margin: 0;
 }
 .form h2 {
@@ -139,15 +141,52 @@ textarea:focus {
   }
 }
 
-@media (max-width: 550px) {
-  .message {
-    padding: 5px 10px 10px;
+@media (max-width: 700px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   }
-  .message h1 {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 70%;
+    color: #6e7f62;
+  }
+  .wrapper p {
+    text-align: center;
+    width: 80%;
+    font-size: 17px;
+    padding-top: 0px;
+  }
+  .form h3 {
+    padding-top: 30px;
+    width: 90%;
+    text-align: center;
     font-size: 20px;
   }
+  .image {
+    width: 50%;
+  }
+  .message {
+    padding: 5px 10px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
   .message p {
-    font-size: 15px;
+    font-size: 17px;
   }
   .message button {
     padding: 12px 5px;
@@ -155,7 +194,7 @@ textarea:focus {
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 550px) {
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -163,8 +202,11 @@ textarea:focus {
     align-items: center;
     padding: 20px;
   }
+  .wrapper p {
+    text-align: center;
+  }
   .image {
-    width: 80%;
+    width: 70%;
   }
   .form {
     display: flex;

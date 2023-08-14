@@ -13,19 +13,19 @@ export default function Categories() {
     },
     {
       name: "Home decor",
-      link: "/decor",
+      link: "decor",
     },
     {
       name: "Jewellery",
-      link: "/jewellery",
+      link: "jewellery",
     },
     {
       name: "Clothes",
-      link: "/clothes",
+      link: "clothes",
     },
     {
       name: "Accesories",
-      link: "/accessories",
+      link: "accessories",
     },
   ];
   //add fadein effect with different delay times

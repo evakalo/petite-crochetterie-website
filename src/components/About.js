@@ -10,9 +10,9 @@ function About() {
           exit={{ opacity: 0 }}
           transition={{ delay: 0.15 }}
         >
-          At the heart of the crochet creations lies a blend of creativity and
+          "At the heart of the crochet creations lies a blend of creativity and
           inspiration, resulting in handcrafted pieces that warm both hearts and
-          homes.
+          homes."
         </motion.h2>{" "}
         <div className={styles.text}>
           {" "}

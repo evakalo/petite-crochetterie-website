@@ -12,10 +12,7 @@ const BurgerNav = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-  // const toggleDropdown = (e) => {
-  //   e.stopPropagation();
-  //   setIsDropMenuShown(!isDropMenuShown); //vrati ovo ako ces imati submenu
-  // };
+
   return (
     <nav
       className={`burgerStyles.wrapper open_sans.className`}
@@ -40,41 +37,11 @@ const BurgerNav = () => {
             <Link to="/">
               <li className={burgerStyles.underline}>Home</li>
             </Link>
-            {/* <li
-              className={burgerStyles.dropMenuWrapper}
-              // onClick={toggleDropdown} // ako ces opet dodati kategorije
-            > */}
+
             <Link to="/categories">
               <li>Categories </li>
             </Link>
-            {/* {isDropMenuShown && (
-                <motion.div
-                  initial={{
-                    left: 0,
-                    opacity: 0,
-                  }}
-                  animate={{
-                    left: 100,
-                    opacity: 1,
-                    backgroundColor: "#9f9688",
-                  }}
-                  exit={{ left: 0, opacity: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className={burgerStyles.dropMenu}
-                >
-                  <ul>
-                    <li>Clothes - adults</li>
-                    <li>Clothes - kids</li>
-                    <li>Toys (0-3)</li>
-                    <li>Toys(3+)</li>
-                    <li>Home decor</li>
-                    <li>Jewellery</li>
-                  </ul>
-                </motion.div>
-              )}
 
-              <SlArrowRight /> */}
-            {/* </li> */}
             <Link to="/about">
               <li className={burgerStyles.underline}>About</li>
             </Link>

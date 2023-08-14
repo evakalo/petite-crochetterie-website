@@ -6,13 +6,6 @@ const PhotoGallery = () => {
   const photosByCategory = {
     "toys(0-3)": [
       {
-        src: "../../images/baby-bunny.jpg",
-        alt: "baby-bunny",
-        name: "Baby bunny",
-        price: "20",
-        description: "dimensions: 20 x 10",
-      },
-      {
         src: "../../images/zeko.jpg",
         alt: "fox",
         name: "Mouse",
@@ -34,27 +27,13 @@ const PhotoGallery = () => {
         price: "20",
         description: "dimensions: 20 x 10",
       },
-      {
-        src: "../../images/zaba.jpg",
-        alt: "baby-bunny",
-        name: "Frog",
-        price: "20",
-        description: "dimensions: 20 x 10",
-      },
-      {
-        src: "../../images/zeko-cura.jpg",
-        alt: "baby-bunny",
-        name: "Bunny",
-        price: "20",
-        description: "dimensions: 20 x 10",
-      },
     ],
     "toys(3+)": [
       {
         src: "../../images/mouse.jpg",
         alt: "baby-bunny",
         name: "Mouse",
-        price: "price: 20",
+        price: " 20",
         description: "dimensions: 20 x 10",
       },
       {
@@ -80,10 +59,86 @@ const PhotoGallery = () => {
         description: "dimensions: 20 x 10",
       },
       {
-        src: "../../images/fox2.jpg",
-        alt: "baby-bunny",
-        name: "Fox",
+        src: "../../images/sweater-bear-crop.jpg",
+        alt: "bear with a sweater",
+        name: "Sweater bear",
         price: "20",
+        description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/clown.jpg",
+        alt: "Clown",
+        name: "Clown",
+        price: "20",
+        description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/yorrick-the-yeti.jpg",
+        alt: "Yorrick the yeti toy",
+        name: "Yorrick the yeti",
+        price: "20",
+        description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/octopus-family.jpg",
+        alt: "octopus family",
+        name: "Octopus family",
+        price: "20",
+        description: "dimensions: 20 x 10",
+      },
+    ],
+    decor: [
+      {
+        src: "../../images/plant-pot-hanger-crop.jpg",
+        alt: "plant pot hanger",
+        name: "Plant pot hanger",
+        price: " 20",
+        description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/mini-jellyfish.jpg",
+        alt: "decor mini jellyfish",
+        name: "Mini jellyfish",
+        price: " 20",
+        description: "dimensions: 20 x 10",
+      },
+    ],
+    jewellery: [
+      {
+        src: "../../images/jellyfish.jpg",
+        alt: "jellyfish earrings",
+        name: "Jellyfish earrings",
+        price: " 20",
+        description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/round-earrings.jpg",
+        alt: "round crochet earrings",
+        name: "Round earrings",
+        price: " 20",
+        description: "dimensions: 20 x 10",
+      },
+    ],
+    clothes: [
+      {
+        src: "../../images/cable-cardigan.jpg",
+        alt: "cable cardigan",
+        name: "Cable cardigan",
+        price: " 20",
+        description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/moss-mesh-top-crop.jpg",
+        alt: "moss-mesh-top",
+        name: "Moss & Mesh tank top",
+        price: " 20",
+        description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/v-neck-top.jpg",
+        alt: "moss-mesh-top",
+        name: "V-neck tank top",
+        price: " 20",
         description: "dimensions: 20 x 10",
       },
     ],

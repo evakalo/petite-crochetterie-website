@@ -19,9 +19,11 @@ const Contact = () => {
             exit={{ opacity: 0 }}
             transition={{ delay: 0.17 }}
           >
-            Item you like is out of stock?
+            Got questions about a particular item or custom order?
           </motion.h3>
-          <p>For custom orders get in touch</p>
+          <p>
+            Drop me a line below, and I’ll get back to you as soon as possible!
+          </p>
           <h2>Contact me </h2>
           <input
             className={contactStyles.input}

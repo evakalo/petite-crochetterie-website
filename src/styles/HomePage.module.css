@@ -6,6 +6,7 @@
 }
 .container {
   background: #618e98a1;
+  background: #919f88;
   width: 70%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 80%;
@@ -15,7 +16,7 @@
   justify-content: space-evenly;
   color: #eee8e3;
   gap: 10px;
-  font-family: verdana;
+  font-family: "Raleway", sans-serif;
   border-radius: 3px;
 }
 
@@ -30,14 +31,15 @@
   width: 40%;
   padding: 15px;
   background-color: #6e7f62;
-  color: #eee8e3;
+  background-color: #ffbf00;
+  color: white;
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
 }
 .description button:hover {
-  background-color: #607055;
+  background-color: #e6a100;
   transition: all 1s;
   cursor: pointer;
 }
@@ -45,6 +47,7 @@
   width: 100%;
   font-weight: 400;
   padding-bottom: 20px;
+  font-size: 18px;
 }
 .imageContainer {
   width: 500px;
@@ -67,18 +70,21 @@
 }
 .aboutPhotos {
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+  width: 70%;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
+  padding-bottom: 30px;
 }
 .about img {
-  width: 30%;
+  width: 40%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
 }
 
 .about p {
-  width: 25%;
+  width: 35%;
   text-align: justify;
   font-size: 17px;
   margin-top: 10px;
@@ -86,70 +92,53 @@
   border-radius: 10px;
   line-height: 1.5;
 }
-.itemsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #6e7f62;
-  padding: 20px;
-}
-.itemsContainer h4 {
-  color: #eee8e3;
-  padding: 20px;
-  font-variant: small-caps;
-}
-.item {
-  width: 35%;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #e0dcd9;
-}
-.item img {
-  width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.item img:hover {
-  cursor: pointer;
-  opacity: 0.7;
-  transition: all 500ms;
-}
-.item h3,
-p {
-  padding-top: 10px;
-}
+
 @media (max-width: 1700px) {
   .container {
     padding: 15px 25px;
     margin-top: 10px;
   }
+  .description button {
+    width: 60%;
+    padding: 15px;
+    font-size: 16px;
+  }
 }
 @media (max-width: 1380px) {
   .description button {
-    width: 50%;
+    width: 60%;
     padding: 15px;
     font-size: 16px;
   }
   .imageContainer {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
+    width: 60%;
+  }
+  .about img {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .description button {
+    width: 60%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .description p {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 17px;
   }
 }
 @media (max-width: 1200px) {
   .container {
     padding: 25px;
-    width: 80%;
+    width: 70%;
   }
 
   .imageContainer {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+    width: 80%;
   }
+
   .description p {
     width: 100%;
     font-weight: 400;
@@ -157,7 +146,7 @@ p {
     padding-bottom: 20px;
   }
   .description button {
-    width: 60%;
+    width: 70%;
     font-size: 16px;
   }
 
@@ -173,7 +162,7 @@ p {
     gap: 30px;
   }
   .about img {
-    width: 50%;
+    width: 40%;
   }
 
   .about p {
@@ -187,19 +176,19 @@ p {
 @media (max-width: 910px) {
   .container {
     margin-top: 15px;
-    width: 85%;
-    height: 60vh;
+    width: 90%;
+    height: 80vh;
     font-size: 15px;
   }
   .description p {
     width: 100%;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     padding-bottom: 20px;
   }
   .description button {
     width: 70%;
-    font-size: 15px;
+    font-size: 16px;
   }
   .pageWrapper {
     gap: 10px;
@@ -209,11 +198,11 @@ p {
   }
   .aboutPhotos {
     display: flex;
-    width: 70%;
+    width: 80%;
     gap: 10px;
   }
   .about img {
-    width: 100%;
+    width: 40%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .item h3 {
@@ -234,11 +223,12 @@ p {
     padding: 20px;
     flex-wrap: wrap-reverse;
     height: 100%;
+    width: 80%;
     padding-bottom: 0px;
   }
   .imageContainer {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
   }
   .description {
@@ -250,12 +240,12 @@ p {
     padding: 10px 10px 30px;
   }
   .description p {
-    width: 90%;
+    width: 80%;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
   }
   .description button {
-    font-size: 15px;
+    font-size: 16px;
     padding: 15px;
   }
 
@@ -267,44 +257,70 @@ p {
   }
   .aboutPhotos {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     width: 90%;
-
-    gap: 30px;
+    gap: 20px;
+    padding: 0px 0px 20px;
   }
   .about img {
-    width: 50%;
+    width: 40%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .about p {
-    width: 85%;
+    width: 55%;
     font-size: 15px;
     margin-top: 10px;
     padding: 25px 5px;
   }
-  .itemsContainer {
-    padding: 5px;
-  }
-  .item {
-    width: 75%;
+}
+@media (max-width: 450px) {
+  .container {
     padding: 20px;
+    flex-wrap: wrap-reverse;
+    height: 100%;
+    width: 90%;
+    padding-bottom: 0px;
+  }
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .description {
+    font-size: 16px;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 10px 30px;
+  }
+  .description p {
+    width: 80%;
     text-align: center;
-    color: #eee8e3;
+    font-size: 16px;
   }
-  .item img {
+  .description button {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .about p {
+    width: 60%;
+  }
+  .pageWrapper {
+    gap: 10px;
+  }
+  .about {
+    gap: 2px;
+  }
+  .aboutPhotos {
     width: 100%;
+    gap: 5px;
+    padding: 0px 0px 20px;
+  }
+  .about img {
+    width: 48%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  .item img:hover {
-    cursor: pointer;
-    opacity: 0.7;
-    transition: all 500ms;
-  }
-  .item h3,
-  p {
-    padding-top: 10px;
   }
 }
