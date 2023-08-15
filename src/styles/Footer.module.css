@@ -1,0 +1,39 @@
+.wrapper {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #6e7f62;
+}
+.wrapper p {
+  width: 80%;
+  font-size: 18px;
+  padding: 1% 20%;
+  text-align: center;
+  border-radius: 7px;
+}
+.link {
+  color: #ffbf00;
+  font-weight: 600;
+}
+.link:hover {
+  color: #e6a100;
+  font-weight: 700;
+}
+
+@media (max-width: 950px) {
+  .wrapper p {
+    width: 100%;
+    font-size: 16px;
+    padding: 1% 15%;
+  }
+}
+@media (max-width: 550px) {
+  .wrapper p {
+    width: 100%;
+    padding: 1% 7%;
+    font-size: 15px;
+  }
+}

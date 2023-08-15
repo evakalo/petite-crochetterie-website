@@ -23,10 +23,10 @@ export default function Categories() {
       name: "Clothes",
       link: "clothes",
     },
-    {
-      name: "Accesories",
-      link: "accessories",
-    },
+    // {
+    //   name: "Accesories",
+    //   link: "accessories",
+    // },
   ];
   //add fadein effect with different delay times
   const variants = {

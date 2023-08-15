@@ -14,7 +14,6 @@
   cursor: pointer;
 }
 .list li:hover {
-  color: lightcoral;
   color: #87bdd8;
   transition: all 500ms;
 }
@@ -29,5 +28,11 @@
     padding: 25px 10px;
     font-size: 16px;
     cursor: pointer;
+  }
+}
+@media (max-width: 420px) {
+  .list li {
+    font-size: 14px;
+    padding: 30px 5px;
   }
 }

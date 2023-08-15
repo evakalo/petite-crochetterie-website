@@ -9,6 +9,7 @@ import Layout from "./components/Layout";
 import reportWebVitals from "./reportWebVitals";
 import Contact from "./components/Contact";
 import PhotoGallery from "./components/PhotoGallery";
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Route exact path="/contact" element={<Contact />} />
         <Route path="/categories/:categoryName" element={<PhotoGallery />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -2,33 +2,6 @@ import homepageStyles from "../styles/HomePage.module.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 const HomePage = () => {
-  // const products = [
-  //   {
-  //     name: "Fox",
-  //     price: "20eur",
-  //     url: "../../images/fox.jpg",
-  //     alt: "Fox crochet toy",
-  //   },
-  //   {
-  //     name: "Polar bear",
-  //     price: "20eur",
-  //     url: "../../images/cute.jpg",
-  //     alt: "Polar bear crochet toy",
-  //   },
-  //   {
-  //     name: "Jellyfish earing",
-  //     price: "20eur",
-  //     url: "../../images/jellyfish.jpg",
-  //     alt: "Jellyfish crochet earing",
-  //   },
-  //   {
-  //     name: "Plant hanger",
-  //     price: "20eur",
-  //     url: "../../images/plant.jpg",
-  //     alt: "Crochet plant hanger",
-  //   },
-  // ];
-
   return (
     <div className={homepageStyles.pageWrapper}>
       <div className={homepageStyles.container}>
@@ -40,7 +13,7 @@ const HomePage = () => {
             transition={{ delay: 0.22 }}
             className={homepageStyles.header}
           >
-            Welcome to Petite Crochetterie, an crochet business lovingly crafted
+            Welcome to Petite Crochetterie, a crochet business lovingly crafted
             by a passionate mom.
           </motion.p>
           <button>
