@@ -8,22 +8,22 @@ const PhotoGallery = () => {
       {
         src: "../../images/zeko.jpg",
         alt: "Bunny",
-        name: "Bunny",
+        name: "Blossom the Bunny",
         price: "15",
         description: "dimensions: 20 x 10",
       },
 
       {
-        src: "../../images/cutie.jpg",
+        src: "../../images/cute.jpg",
         alt: "polar-bear",
-        name: "Polar bear",
+        name: "Parker the Polar Bear",
         price: "25",
         description: "dimensions: 20 x 10",
       },
       {
         src: "../../images/zeke.jpg",
-        alt: "baby-bunnies",
-        name: "Bunnies",
+        alt: "bunny",
+        name: "Huggable Honeybun",
         price: "40",
         description: "dimensions: 20 x 10",
       },
@@ -32,14 +32,14 @@ const PhotoGallery = () => {
       {
         src: "../../images/mouse.jpg",
         alt: "mouse",
-        name: "Mouse",
+        name: "Mr. Stitch Whiskers",
         price: " 25",
         description: "dimensions: 20 x 10",
       },
       {
         src: "../../images/medo-majica.jpg",
         alt: "bear",
-        name: "Bear",
+        name: "Carefree Bear",
         price: "35",
         description: "dimensions: 20 x 10",
       },
@@ -47,26 +47,26 @@ const PhotoGallery = () => {
       {
         src: "../../images/medo2.jpg",
         alt: "cat",
-        name: "Cat",
+        name: "Tom Kitten",
         price: "20",
         description: "dimensions: 20 x 10",
       },
       {
         src: "../../images/miffy.jpg",
         alt: "baby-bunny",
-        name: "Bunny",
+        name: "Clover the Bunny",
         price: "35",
         description: "dimensions: 20 x 10",
       },
       {
         src: "../../images/sweater-bear-crop.jpg",
         alt: "polar bear with a sweater",
-        name: "Sweater bear",
+        name: "Frosty the Polar Bear",
         price: "40",
         description: "dimensions: 20 x 10",
       },
       {
-        src: "../../images/clown.jpg",
+        src: "../../images/clown-crop.jpg",
         alt: "Clown",
         name: "Clown",
         price: "40",
@@ -159,8 +159,8 @@ const PhotoGallery = () => {
 
             <div className={galleryStyles.text}>
               <h4>{photo.name}</h4>
-              <p>{photo.description}</p>
-              <p>price: {photo.price}€ </p>
+              {/* <p>{photo.description}</p> */}
+              <p>price: {photo.price}£ </p>
             </div>
           </div>
         ))}

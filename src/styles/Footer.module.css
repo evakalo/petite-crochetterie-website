@@ -18,11 +18,14 @@
   color: #ffbf00;
   font-weight: 600;
 }
-.link:hover {
-  color: #e6a100;
-  font-weight: 700;
-}
 
+@media (hover: hover) {
+  .link:hover {
+    color: #ffbf00;
+    font-weight: 700;
+    transition: color 1000ms ease-in;
+  }
+}
 @media (max-width: 950px) {
   .wrapper p {
     width: 100%;
