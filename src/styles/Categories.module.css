@@ -24,7 +24,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   height: 450px;
   width: 450px;
 }
@@ -34,6 +33,7 @@
   font-weight: 400;
   padding: 5px;
   line-height: 1.5;
+  background-color: #eee8e32b;
 }
 .imageContainer h2 {
   font-weight: 400;

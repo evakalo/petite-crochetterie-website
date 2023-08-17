@@ -22,7 +22,7 @@ const HomePage = () => {
         </div>
         <div className={homepageStyles.imageContainer}>
           <img
-            src="../../images/cute.jpg"
+            src="../../images/medo-majica.jpg"
             alt="table with tiny jellyfish crochet toys in jars"
           ></img>
         </div>

@@ -7,16 +7,18 @@
 .container {
   background: #6e7f62;
   background: #919f88;
-
   width: 70%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 80%;
   padding: 20px 0px;
   display: flex;
   align-items: center;
+
   justify-content: space-evenly;
+  /* justify-content: center; */
   color: #eee8e3;
   gap: 10px;
+  gap: 20px;
   font-family: "Raleway", sans-serif;
   border-radius: 3px;
 }
@@ -173,7 +175,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 1210px) {
   .container {
     margin-top: 15px;
     width: 90%;
@@ -216,6 +218,65 @@
     padding: 25px 5px;
     border-radius: 10px;
     line-height: 1.5;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+    flex-wrap: wrap-reverse;
+    height: 100%;
+    width: 80%;
+    padding-bottom: 0px;
+  }
+  .imageContainer {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+  }
+  .description {
+    font-size: 16px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 30px;
+  }
+  .description p {
+    width: 80%;
+    text-align: center;
+    font-size: 19px;
+  }
+  .description button {
+    font-size: 19px;
+    padding: 15px;
+    width: 60%;
+  }
+
+  .pageWrapper {
+    gap: 10px;
+  }
+  .about {
+    gap: 2px;
+  }
+  .aboutPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    padding: 0px 0px 20px;
+  }
+  .about img {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .about p {
+    width: 55%;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 25px 5px;
   }
 }
 @media (max-width: 760px) {
