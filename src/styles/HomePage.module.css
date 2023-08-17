@@ -98,7 +98,7 @@
     width: 95%;
     font-weight: 400;
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .container {
@@ -108,15 +108,10 @@
   .description button {
     width: 60%;
     padding: 15px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media (max-width: 1380px) {
-  .description button {
-    width: 60%;
-    padding: 15px;
-    font-size: 16px;
-  }
   .imageContainer {
     width: 500px;
     height: 450px;
@@ -137,13 +132,13 @@
   }
 
   .description p {
-    width: 80%;
+    width: 100%;
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
-@media (max-width: 1210px) {
+/* @media (max-width: 1210px) {
   .container {
     margin-top: 15px;
     width: 90%;
@@ -187,7 +182,7 @@
     border-radius: 10px;
     line-height: 1.5;
   }
-}
+} */
 
 @media (max-width: 1200px) {
   .container {
@@ -351,5 +346,28 @@
   .about img {
     width: 48%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+@media (max-width: 395px) {
+  .description button {
+    font-size: 16px;
+    padding: 15px;
+    width: 80%;
+  }
+  .description p {
+    width: 90%;
+  }
+}
+@media (max-width: 355px) {
+  .imageContainer {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+  }
+  .description p {
+    width: 100%;
+  }
+  .about p {
+    width: 70%;
   }
 }
