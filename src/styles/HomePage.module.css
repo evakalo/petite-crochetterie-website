@@ -5,8 +5,9 @@
   gap: 60px;
 }
 .container {
-  background: #618e98a1;
+  background: #6e7f62;
   background: #919f88;
+
   width: 70%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 80%;
@@ -34,7 +35,7 @@
   color: white;
   border: none;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
 }
 .description button:hover {
@@ -46,7 +47,7 @@
   width: 100%;
   font-weight: 400;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 35px;
 }
 .imageContainer {
   width: 500px;

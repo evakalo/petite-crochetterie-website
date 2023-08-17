@@ -31,7 +31,7 @@
 .imageContainer h4 {
   text-transform: uppercase;
   border: 1px solid;
-  font-weight: 300;
+  font-weight: 400;
   padding: 5px;
   line-height: 1.5;
 }
@@ -50,20 +50,23 @@
     center/cover;
 }
 .imageContainer:nth-of-type(2) {
-  background: url(../../public/images/bear.jpg) no-repeat center center/cover;
+  background: url(../../public/images/medo-majica.jpg) no-repeat center
+    center/cover;
 }
 .imageContainer:nth-of-type(3) {
-  background: url(../../public/images/Home.jpg) no-repeat center center/cover;
+  background: url(../../public/images/plant.jpg) no-repeat center center/cover;
 }
 .imageContainer:nth-of-type(4) {
   background: url(../../public/images/jellyfish.jpg) no-repeat center
     center/cover;
 }
 .imageContainer:nth-of-type(5) {
-  background: url(../../public/images/Clothes.jpg) no-repeat center center/cover;
+  background: url(../../public/images/cable-cardigan.jpg) no-repeat center
+    center/cover;
 }
 .imageContainer:nth-of-type(6) {
-  background: url(../../public/images/Decor.jpg) no-repeat center center/cover;
+  background: url(../../public/images/plant-pot-hanger-crop.jpg) no-repeat
+    center center/cover;
 }
 .imageContainer:nth-of-type(7) {
   background: url(../../public/images/Decor.jpg) no-repeat center center/cover;
