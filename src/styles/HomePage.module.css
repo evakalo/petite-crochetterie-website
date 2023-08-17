@@ -95,7 +95,7 @@
 
 @media (max-width: 1700px) {
   .description p {
-    width: 80%;
+    width: 95%;
     font-weight: 400;
     padding-bottom: 20px;
     font-size: 30px;
@@ -118,7 +118,13 @@
     font-size: 16px;
   }
   .imageContainer {
-    width: 60%;
+    width: 500px;
+    height: 450px;
+  }
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .about img {
     width: 40%;
@@ -131,52 +137,9 @@
   }
 
   .description p {
-    width: 100%;
-    padding-bottom: 20px;
-    font-size: 17px;
-  }
-}
-@media (max-width: 1200px) {
-  .container {
-    padding: 25px;
-    width: 70%;
-  }
-
-  .imageContainer {
     width: 80%;
-  }
-
-  .description p {
-    width: 100%;
-    font-weight: 400;
-    font-size: 16px;
     padding-bottom: 20px;
-  }
-  .description button {
-    width: 70%;
-    font-size: 16px;
-  }
-
-  .pageWrapper {
-    gap: 20px;
-  }
-  .about {
-    gap: 2px;
-  }
-  .aboutPhotos {
-    display: flex;
-    width: 70%;
-    gap: 30px;
-  }
-  .about img {
-    width: 40%;
-  }
-
-  .about p {
-    width: 55%;
-    text-align: justify;
-    font-size: 16px;
-    padding: 30px 10px;
+    font-size: 18px;
   }
 }
 
