@@ -95,12 +95,15 @@
 
 @media (max-width: 1700px) {
   .description p {
-    width: 95%;
+    width: 90%;
     font-weight: 400;
     padding-bottom: 20px;
-    font-size: 26px;
+    font-size: 24px;
   }
-
+  .imageContainer {
+    width: 500px;
+    height: 450px;
+  }
   .container {
     padding: 15px 25px;
     margin-top: 10px;
@@ -138,21 +141,25 @@
   }
 }
 
-/* @media (max-width: 1210px) {
+@media (max-width: 1210px) {
   .container {
     margin-top: 15px;
-    width: 90%;
-    height: 80vh;
+    width: 70%;
+    height: 65vh;
     font-size: 15px;
+  }
+  .imageContainer {
+    width: 450px;
+    height: 400px;
   }
   .description p {
     width: 100%;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 20px;
   }
   .description button {
-    width: 70%;
+    width: 80%;
     font-size: 16px;
   }
   .pageWrapper {
@@ -182,9 +189,9 @@
     border-radius: 10px;
     line-height: 1.5;
   }
-} */
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 1020px) {
   .container {
     padding: 20px;
     flex-wrap: wrap-reverse;
