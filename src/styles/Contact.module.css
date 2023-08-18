@@ -278,3 +278,49 @@ textarea:focus {
     width: 85%;
   }
 }
+
+@media (max-width: 380px) {
+  .image {
+    width: 80%;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 95%;
+    color: #6e7f62;
+  }
+  .form h3 {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px 0px;
+    margin-top: 10px;
+  }
+
+  .form h2 {
+    font-size: 19px;
+    padding: 5px;
+  }
+
+  .message {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .message h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .message p {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+  .message button {
+    padding: 12px 5px;
+    width: 85%;
+  }
+}

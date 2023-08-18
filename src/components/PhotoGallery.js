@@ -145,9 +145,9 @@ const PhotoGallery = () => {
   };
 
   const photos = photosByCategory[categoryName];
-  if (!photos) {
-    return <div style={{ color: "black" }}>Category not found.</div>;
-  }
+  // if (!photos) {
+  //   return <div style={{ color: "black" }}>Category not found.</div>;
+  // }
   return (
     <div className={galleryStyles.wrapper}>
       {" "}

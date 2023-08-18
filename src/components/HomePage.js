@@ -45,23 +45,7 @@ const HomePage = () => {
           <img src="../../images/home-slika-3-crop.jpg" alt="plant hanger" />
           <img src="../../images/home-slika-4.jpg" alt="dear crochet toy" />
         </div>
-        {/* <p>
-          From cozy jumpers and whimsical amigurumi to stylish accessories, you
-          are sure to find something you will love among these crochet wonders.
-          Each piece is delicately crafted with care, ensuring the highest
-          quality and attention to detail.
-        </p> */}
       </div>
-      {/* <div className={homepageStyles.itemsContainer}>
-        {products.map((item, key) => (
-          <div key={key} className={homepageStyles.item}>
-            <img src={item.url} title="Go to Etsy webshop" alt={item.alt} />
-
-            <h3>{item.name} </h3>
-            <p>Price : {item.price}</p>
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 };
