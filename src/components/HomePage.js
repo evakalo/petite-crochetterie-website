@@ -13,8 +13,8 @@ const HomePage = () => {
             transition={{ delay: 0.22 }}
             className={homepageStyles.header}
           >
-            Welcome to Petite Crochetterie, a crochet business lovingly crafted
-            by a passionate mom.
+            Welcome to <h3>Petite Crochetterie</h3> a crochet business lovingly
+            crafted by a passionate mom.
           </motion.p>
           <button>
             <Link to="/categories">Explore categories</Link>
