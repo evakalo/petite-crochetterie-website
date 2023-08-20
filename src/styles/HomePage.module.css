@@ -295,7 +295,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 970px) {
   .container {
     width: 90%;
   }
@@ -304,7 +304,7 @@
     font-size: 30px;
   }
 }
-@media (max-width: 855px) {
+@media (max-width: 866px) {
   .container {
     gap: 0px;
   }
@@ -348,6 +348,7 @@
   }
   .description h3 {
     font-size: 25px;
+    line-height: 1.5;
   }
   .description button {
     font-size: 14px;
