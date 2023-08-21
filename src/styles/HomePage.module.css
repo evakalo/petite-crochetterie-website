@@ -169,12 +169,12 @@
   .container {
     margin-top: 15px;
     width: 70%;
-    height: 55vh;
+    height: 40%;
     font-size: 15px;
   }
   .imageContainer {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
   .description h3 {
     font-size: 30px;
@@ -219,7 +219,7 @@
 }
 @media (max-width: 1142px) {
   .container {
-    height: 55vh;
+    height: 40%;
   }
   .description {
     align-items: flex-start;
