@@ -56,7 +56,13 @@ export default function Categories() {
             className={categoriesStyles.imageContainer}
           >
             {" "}
-            <Link to={item.link} className={categoriesStyles.link}>
+            <Link
+              to={item.link}
+              className={categoriesStyles.link}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               <div className={categoriesStyles.title}>
                 <h2>{item.name}</h2>
                 <h4>check collection</h4>

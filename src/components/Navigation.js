@@ -26,6 +26,7 @@ const UnderlinedMenu = () => {
 
     if (selectedIndex !== -1) {
       setSelected(selectedIndex);
+      window.scrollTo(0, 0);
     } else {
       setSelected(-1); // No match found
     }

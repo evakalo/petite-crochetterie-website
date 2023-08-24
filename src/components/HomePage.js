@@ -17,7 +17,14 @@ const HomePage = () => {
             crafted by a passionate mom.
           </motion.p>
           <button>
-            <Link to="/categories">Explore categories</Link>
+            <Link
+              to="/categories"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Explore categories
+            </Link>
           </button>{" "}
         </div>
         <div className={homepageStyles.imageContainer}>

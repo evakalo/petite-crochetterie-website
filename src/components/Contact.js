@@ -144,7 +144,14 @@ const Contact = () => {
           <p>You will be hearing from me soon. </p>
           <p>In the meantime, check out the collection.</p>
           <button>
-            <Link to="/categories">Explore categories</Link>
+            <Link
+              to="/categories"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Explore categories
+            </Link>
           </button>
         </motion.div>
       )}
