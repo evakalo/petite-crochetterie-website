@@ -88,6 +88,14 @@ const PhotoGallery = () => {
       },
     ],
     decor: [
+      //ako ces raditi carousel - provjeri dal da src unutar sebe ima array ili logika ako je ime array, neka ide u carousel
+      {
+        src: "../../images/lemon-5.jpg",
+        alt: "lemon-decoration",
+        name: "Lemon crochet toy",
+        price: " 7",
+        description: "dimensions: 20 x 10",
+      },
       {
         src: "../../images/plant-pot-hanger-crop.jpg",
         alt: "plant pot hanger",

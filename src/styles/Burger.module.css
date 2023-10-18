@@ -112,12 +112,22 @@
 }
 @media (max-width: 540px) {
   .nav ul {
-    width: 50%;
+    /* prije bilo width: 50% */
+    width: 100%;
+    top: 0px;
+    opacity: 0.9;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  /* nije bilo prije */
+  .arrow {
     z-index: 1000;
   }
 }
-@media (max-width: 379px) {
+/* vrati ako treba */
+/* @media (max-width: 379px) {
   .nav ul {
     width: 50%;
   }
-}
+} */
