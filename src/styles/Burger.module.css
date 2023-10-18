@@ -122,6 +122,7 @@
 
   /* nije bilo prije */
   .arrow {
+    margin-bottom: 20px;
     z-index: 1000;
   }
 }
