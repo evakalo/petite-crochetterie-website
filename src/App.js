@@ -10,6 +10,7 @@ import Layout from "./components/Layout";
 import Contact from "./components/Contact";
 import PhotoGallery from "./components/PhotoGallery";
 import Footer from "./components/Footer";
+// import Details from "./components/Details";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/categories" element={<Categories />} />
         <Route exact path="/contact" element={<Contact />} />
+        {/* <Route path="/details" element={<Details />} /> */}
         <Route path="/categories/:categoryName" element={<PhotoGallery />} />
       </Routes>
       <Footer />{" "}

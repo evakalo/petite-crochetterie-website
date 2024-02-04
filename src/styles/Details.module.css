@@ -1,0 +1,39 @@
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 10px 0px;
+}
+.carousel {
+  margin: 5px;
+  padding: 2px;
+  background-color: #90abb0;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.orderButton {
+  padding: 15px 25px;
+  background-color: rgb(243, 79, 79);
+  color: white;
+  border: none;
+  width: 80%;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+@media (max-width: 550px) {
+  .main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 10px 0px;
+  }
+  .carousel {
+    width: 100%;
+  }
+}

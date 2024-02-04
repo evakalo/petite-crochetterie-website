@@ -1,7 +1,7 @@
 import socialStyles from "../styles/Socials.module.css";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 import { BiLogoTiktok } from "react-icons/bi";
-import { FaEtsy } from "react-icons/fa";
+// import { FaEtsy } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Socials = () => {
   return (
@@ -30,7 +30,7 @@ const Socials = () => {
             <BiLogoTiktok />
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="https://petitecrochetterie.etsy.com"
             target="_blank"
@@ -38,7 +38,7 @@ const Socials = () => {
           >
             <FaEtsy className={socialStyles.etsy} />
           </Link>
-        </li>
+        </li> */}
       </ul>
     </main>
   );

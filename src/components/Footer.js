@@ -5,8 +5,7 @@ const Footer = () => {
   return (
     <div className={footerStyles.wrapper}>
       <p>
-        {" "}
-        Explore our{" "}
+        {/* Explore our
         <Link
           to="https://petitecrochetterie.etsy.com"
           target="_blank"
@@ -14,9 +13,10 @@ const Footer = () => {
           className={footerStyles.link}
         >
           Etsy shop
-        </Link>{" "}
-        for ready-to-buy treasures or dive into custom possibilities by browsing
-        our categories and reaching out via our{" "}
+        </Link>{" "} */}
+        {/* Dive into custom possibilities by browsing our categories and reaching
+        out via our{" "} */}
+        Choose your favorite items and preferred colors!{" "}
         <Link
           to="/contact"
           onClick={() => {
@@ -24,9 +24,9 @@ const Footer = () => {
           }}
           className={footerStyles.link}
         >
-          contact form
+          Contact us{" "}
         </Link>
-        . Your vision, your choice!
+        to place your order.
       </p>{" "}
     </div>
   );

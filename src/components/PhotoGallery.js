@@ -6,18 +6,23 @@ const PhotoGallery = () => {
   const photosByCategory = {
     "toys(0-3)": [
       {
+        src: "../../images/tricero2.jpg",
+        alt: "Triceratops crochet toy",
+        name: "Tanner the Triceratops",
+        price: "50",
+        description: "height: 30cm",
+      },
+      {
         src: "../../images/goose.jpg",
         alt: "Goose crochet toy",
         name: "Dreamy Goose",
         price: "20",
-        // description: "dimensions: 20 x 10",
       },
       {
         src: "../../images/hedgehog.jpg",
         alt: "Hedgehog crochet toy",
         name: "Harper Hedgehog",
         price: "30",
-        // description: "dimensions: 20 x 10",
       },
       {
         src: "../../images/zeko.jpg",
@@ -109,7 +114,6 @@ const PhotoGallery = () => {
       },
     ],
     decor: [
-      //ako ces raditi carousel - provjeri dal da src unutar sebe ima array ili logika ako je ime array, neka ide u carousel
       {
         src: "../../images/lemon-5.jpg",
         alt: "lemon crochet decoration",
