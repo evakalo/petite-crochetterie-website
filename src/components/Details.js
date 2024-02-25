@@ -95,7 +95,7 @@ const Details = () => {
                 margin: "0",
               }}
             >
-              <summary>Pick colour combination</summary>
+              <summary>Pick your colour combination</summary>
               <img
                 src="../../images/colors.png"
                 alt="colours"

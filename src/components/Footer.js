@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className={footerStyles.wrapper}>
-      <p>
-        {/* Explore our
+    <div className={footerStyles.footerContainer}>
+      <div className={footerStyles.wrapper}>
+        <p>
+          {/* Explore our
         <Link
           to="https://petitecrochetterie.etsy.com"
           target="_blank"
@@ -14,20 +15,33 @@ const Footer = () => {
         >
           Etsy shop
         </Link>{" "} */}
-        {/* Dive into custom possibilities by browsing our categories and reaching
+          {/* Dive into custom possibilities by browsing our categories and reaching
         out via our{" "} */}
-        Choose your favorite items and preferred colors!{" "}
+          Choose your favorite items and preferred colors!{" "}
+          <Link
+            to="/contact"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className={footerStyles.link}
+          >
+            Contact us{" "}
+          </Link>
+          to place your order.
+        </p>{" "}
+      </div>
+      <div className={footerStyles.termsWrapper}>
+        <p>Petite Crochetterie</p>
         <Link
-          to="/contact"
+          to="/terms"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
-          className={footerStyles.link}
+          className={footerStyles.terms}
         >
-          Contact us{" "}
+          Terms and Conditions
         </Link>
-        to place your order.
-      </p>{" "}
+      </div>
     </div>
   );
 };

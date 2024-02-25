@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import galleryStyles from "../styles/Gallery.module.css";
+import { Link } from "react-router-dom";
 const PhotoGallery = () => {
   //useParams to access parameter from current route's url
   const { categoryName } = useParams();
@@ -194,6 +195,9 @@ const PhotoGallery = () => {
               <h4>{photo.name}</h4>
               {/* <p>{photo.description}</p> */}
               <p>price: {photo.price}£ </p>
+              <button className={galleryStyles.orderButton}>
+                <Link>Order now</Link>
+              </button>
             </div>
           </div>
         ))}
