@@ -212,7 +212,7 @@ const PhotoGallery = () => {
               {photo.link ? (
                 <button className={galleryStyles.orderButton}>
                   <Link
-                    to="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdgofN6tv5XCz1s3Mfw2GyHxpHYos_TZsymMXg0LHUFncIU4w%2Fviewform%3Fusp%3Dsf_link%26fbclid%3DIwAR0ngUbfxmYI5cwWZJ_tZ6nw18sOYRE3oEma8oVCRwNjVKDxcFHF5tMTF5c&h=AT35chIU9ByvKGfmBTdsaOMFsguFEpejAHuxLxGHgHjNM15QZD86-IveemeADxY6h0FXxQYLSzW_80f9pdEdo7SNO-gOWcOA_s5KTo0Jo_Hlz9i5X2nX10HSiWL7mI946-A"
+                    to="https://docs.google.com/forms/d/e/1FAIpQLSdgofN6tv5XCz1s3Mfw2GyHxpHYos_TZsymMXg0LHUFncIU4w/viewform"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
