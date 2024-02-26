@@ -12,18 +12,21 @@ const PhotoGallery = () => {
         name: "Tanner the Triceratops",
         price: "50",
         description: "height: 30cm",
+        link: true,
       },
       {
         src: "../../images/goose.jpg",
         alt: "Goose crochet toy",
         name: "Dreamy Goose",
         price: "20",
+        link: true,
       },
       {
         src: "../../images/hedgehog.jpg",
         alt: "Hedgehog crochet toy",
         name: "Harper Hedgehog",
         price: "30",
+        link: true,
       },
       {
         src: "../../images/zeko.jpg",
@@ -31,6 +34,7 @@ const PhotoGallery = () => {
         name: "Blossom the Bunny",
         price: "15",
         description: "dimensions: 20 x 10",
+        link: true,
       },
 
       {
@@ -39,6 +43,7 @@ const PhotoGallery = () => {
         name: "Parker the Polar Bear",
         price: "25",
         description: "dimensions: 20 x 10",
+        link: true,
       },
       {
         src: "../../images/zeke.jpg",
@@ -46,6 +51,7 @@ const PhotoGallery = () => {
         name: "Huggable Honeybun",
         price: "40",
         description: "dimensions: 20 x 10",
+        link: true,
       },
     ],
     "toys(3+)": [
@@ -54,6 +60,7 @@ const PhotoGallery = () => {
         alt: "elephant crochet toy",
         name: "Elsie the Elephant",
         price: "35",
+        link: true,
         // description: "dimensions: 20 x 10",
       },
       {
@@ -62,6 +69,7 @@ const PhotoGallery = () => {
         name: "Mr. Stitch Whiskers",
         price: "25",
         description: "dimensions: 20 x 10",
+        link: true,
       },
       {
         src: "../../images/medo-majica.jpg",
@@ -69,6 +77,7 @@ const PhotoGallery = () => {
         name: "Carefree Bear",
         price: "35",
         description: "dimensions: 20 x 10",
+        link: true,
       },
 
       {
@@ -77,6 +86,7 @@ const PhotoGallery = () => {
         name: "Tom Kitten",
         price: "20",
         description: "dimensions: 20 x 10",
+        link: true,
       },
       {
         src: "../../images/miffy.jpg",
@@ -84,6 +94,7 @@ const PhotoGallery = () => {
         name: "Clover the Bunny",
         price: "35",
         description: "dimensions: 20 x 10",
+        link: true,
       },
       {
         src: "../../images/sweater-bear-crop.jpg",
@@ -91,6 +102,7 @@ const PhotoGallery = () => {
         name: "Frosty the Polar Bear",
         price: "40",
         description: "dimensions: 20 x 10",
+        link: true,
       },
       {
         src: "../../images/clown-crop.jpg",
@@ -98,6 +110,7 @@ const PhotoGallery = () => {
         name: "Clown",
         price: "40",
         description: "dimensions: 20 x 10",
+        link: true,
       },
       {
         src: "../../images/yorrick-the-yeti.jpg",
@@ -105,6 +118,7 @@ const PhotoGallery = () => {
         name: "Yorrick the yeti",
         price: "40",
         description: "dimensions: 20 x 10",
+        link: true,
       },
       {
         src: "../../images/octopus-family.jpg",
@@ -112,6 +126,7 @@ const PhotoGallery = () => {
         name: "Octopus family",
         price: "35",
         description: "dimensions: 20 x 10",
+        link: true,
       },
     ],
     decor: [
@@ -193,11 +208,20 @@ const PhotoGallery = () => {
 
             <div className={galleryStyles.text}>
               <h4>{photo.name}</h4>
-              {/* <p>{photo.description}</p> */}
-              <p>price: {photo.price}£ </p>
-              <button className={galleryStyles.orderButton}>
-                <Link>Order now</Link>
-              </button>
+              {/* <p>price: {photo.price}£ </p> */}
+              {photo.link ? (
+                <button className={galleryStyles.orderButton}>
+                  <Link
+                    to="https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdgofN6tv5XCz1s3Mfw2GyHxpHYos_TZsymMXg0LHUFncIU4w%2Fviewform%3Fusp%3Dsf_link%26fbclid%3DIwAR0ngUbfxmYI5cwWZJ_tZ6nw18sOYRE3oEma8oVCRwNjVKDxcFHF5tMTF5c&h=AT35chIU9ByvKGfmBTdsaOMFsguFEpejAHuxLxGHgHjNM15QZD86-IveemeADxY6h0FXxQYLSzW_80f9pdEdo7SNO-gOWcOA_s5KTo0Jo_Hlz9i5X2nX10HSiWL7mI946-A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Order now
+                  </Link>
+                </button>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         ))}

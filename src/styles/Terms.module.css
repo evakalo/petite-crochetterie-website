@@ -1,0 +1,24 @@
+.termsWrapper {
+  margin: 10px auto;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.termsWrapper li,
+p {
+  line-height: 1.5;
+}
+.listHeader {
+  font-weight: bold;
+}
+.termsWrapper h2 {
+  margin-bottom: 20px;
+  margin: 20px 0;
+}
+@media (max-width: 550px) {
+  .termsWrapper {
+    margin: 20px auto;
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}

@@ -7,7 +7,7 @@ import MenuItem from "./MenuItem";
 const menuItems = [
   { text: "Home", linkTo: "/" },
   {
-    text: "Categories",
+    text: "Gallery",
     linkTo: "/categories",
   },
   { text: "About", linkTo: "/about" },

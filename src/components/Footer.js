@@ -17,7 +17,7 @@ const Footer = () => {
         </Link>{" "} */}
           {/* Dive into custom possibilities by browsing our categories and reaching
         out via our{" "} */}
-          Choose your favorite items and preferred colors!{" "}
+          For pricing, deliveries, or custom orders,
           <Link
             to="/contact"
             onClick={() => {
@@ -25,9 +25,9 @@ const Footer = () => {
             }}
             className={footerStyles.link}
           >
-            Contact us{" "}
+            get in touch!
           </Link>
-          to place your order.
+          I'm happy to assist with any questions or inquiries you may have!
         </p>{" "}
       </div>
       <div className={footerStyles.termsWrapper}>

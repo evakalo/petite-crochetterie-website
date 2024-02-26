@@ -23,7 +23,7 @@ const HomePage = () => {
                 window.scrollTo(0, 0);
               }}
             >
-              Explore categories
+              Explore gallery
             </Link>
           </button>{" "}
         </div>

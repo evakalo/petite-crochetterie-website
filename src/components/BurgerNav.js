@@ -39,7 +39,7 @@ const BurgerNav = () => {
             </Link>
 
             <Link to="/categories">
-              <li>Categories </li>
+              <li>Gallery </li>
             </Link>
 
             <Link to="/about">
