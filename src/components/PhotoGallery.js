@@ -56,16 +56,24 @@ const PhotoGallery = () => {
     ],
     "toys(3+)": [
       {
-        src: "../../images/elephant.jpg",
-        alt: "elephant crochet toy",
-        name: "Elsie the Elephant",
+        src: "../../images/anita-the-octopus.jpg",
+        alt: "octopus crochet toy with a scarf and a dress",
+        name: "Anita the Octopus",
+        price: "35",
+        link: true,
+        // description: "dimensions: 20 x 10",
+      },
+      {
+        src: "../../images/lenny-the-cat.jpg",
+        alt: "lenny the cat with a long scarf crochet toy",
+        name: "Lenny the Cat",
         price: "35",
         link: true,
         // description: "dimensions: 20 x 10",
       },
       {
         src: "../../images/mouse.jpg",
-        alt: "mouse crochet toy",
+        alt: "mouse with a bow tie crochet toy",
         name: "Mr. Stitch Whiskers",
         price: "25",
         description: "dimensions: 20 x 10",
