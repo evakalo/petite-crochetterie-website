@@ -12,6 +12,7 @@ import PhotoGallery from "./components/PhotoGallery";
 import Footer from "./components/Footer";
 import Terms from "./components/Terms";
 import Details from "./components/Details";
+import OrderPage from "./components/OrderPage";
 function App() {
   return (
     <>
@@ -23,6 +24,8 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route path="/categories/:categoryName" element={<PhotoGallery />} />
         <Route path="/details/:id" element={<Details />} />
+        <Route exact path="/order" element={<OrderPage />} />
+
         <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />{" "}

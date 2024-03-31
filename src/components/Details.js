@@ -2,16 +2,32 @@ import "react-multi-carousel/lib/styles.css";
 import React, { useState } from "react";
 import detailsStyles from "../styles/Details.module.css";
 import { useLocation } from "react-router-dom";
+import OrderPage from "./OrderPage";
+
 const Details = () => {
   const location = useLocation();
   const { src, alt, name, price, piece1, piece2 } = location.state;
   const [totalPrice, setTotalPrice] = useState(price);
+  const [openModal, setOpenModal] = useState(false);
+  const [quantity, setQuantity] = useState(1);
 
+  const addQuantityAndPrice = (price) => {
+    setTotalPrice(totalPrice + price);
+    setQuantity((quantity) => quantity++);
+  };
+  const removeQuantityAndPrice = (price) => {
+    setTotalPrice(totalPrice - price);
+    setQuantity((quantity) => quantity--);
+  };
   const addItem = (additionalCost) => {
     setTotalPrice(totalPrice + additionalCost);
   };
   const removeItem = (additionalCost) => {
-    setTotalPrice(totalPrice - additionalCost);
+    if (totalPrice > price) {
+      setTotalPrice(totalPrice - additionalCost);
+    } else {
+      setTotalPrice(price);
+    }
   };
   return (
     <main className={detailsStyles.main}>
@@ -24,12 +40,36 @@ const Details = () => {
             style={{
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
               padding: "0px 10px",
             }}
           >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                padding: "10px 0px",
+                gap: 10,
+              }}
+            >
+              {" "}
+              <h4>Quantity:</h4>
+              <p>{quantity}</p>
+              <button
+                className={detailsStyles.priceButton}
+                onClick={() => addQuantityAndPrice(price)}
+              >
+                +{" "}
+              </button>
+              <button
+                className={detailsStyles.priceButton}
+                onClick={() => removeQuantityAndPrice(price)}
+              >
+                -{" "}
+              </button>
+            </div>
+
             <h4>Accessories:</h4>
-            <div style={{ display: "flex", padding: "10px", gap: 10 }}>
+            <div style={{ display: "flex", padding: "10px 0px", gap: 10 }}>
               <p>
                 {piece1.name}: {piece1.price}£{" "}
               </p>
@@ -81,10 +121,17 @@ const Details = () => {
             initial on your toy (subject to availability)?{" "}
           </p>
           <input />
-          <h4>Price: {totalPrice}£ </h4>
-          <button className={detailsStyles.orderButton}>Order now</button>{" "}
+          <h4>Item price: {price}£ </h4>
+          <h4>Total price: {totalPrice}£ </h4>
+          <button
+            className={detailsStyles.orderButton}
+            onClick={() => setOpenModal(true)}
+          >
+            Order now
+          </button>{" "}
         </div>
       </div>
+      {openModal ? <OrderPage setOpenModal={setOpenModal} /> : ""}
     </main>
   );
 };

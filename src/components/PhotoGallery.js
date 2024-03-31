@@ -71,7 +71,7 @@ const PhotoGallery = () => {
         alt: "octopus crochet toy with a scarf and a dress",
         name: "Anita the Octopus",
         price: 35,
-        piece1: { name: "extra hood", price: "10" },
+        piece1: { name: "extra hood", price: 10 },
         link: true,
         id: generateProductId(),
       },

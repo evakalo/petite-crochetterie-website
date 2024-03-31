@@ -15,7 +15,7 @@
   width: 500px;
 }
 .wrapper h2 {
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 .priceButton {
   background-color: #265289;
@@ -29,6 +29,10 @@
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.priceButton:hover {
+  cursor: pointer;
+  background-color: #265289c6;
 }
 .image {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -67,7 +71,7 @@
 
 .orderButton:hover {
   cursor: pointer;
-  background-color: #265289;
+  background-color: #265289c6;
 }
 
 @media (max-width: 550px) {
