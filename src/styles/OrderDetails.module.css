@@ -1,0 +1,357 @@
+.wrapper {
+  display: flex;
+  position: fixed;
+  background-color: #ffffff;
+  font-family: verdana;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+  width: 400px;
+  border-radius: 7px;
+}
+.orderMessage {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.orderMessage h1 {
+  color: #90abb0;
+  padding-bottom: 20px;
+}
+.orderMessage p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+.orderMessage button {
+  width: 100%;
+  padding: 15px;
+  background-color: #6e7f62;
+  color: #eee8e3;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 30px;
+  width: 80%;
+  color: #2652899f;
+}
+
+.form h3 {
+  color: #2652899f;
+  padding: 10px 0px;
+  font-size: 16px;
+}
+.form p {
+  color: #90abb0;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+}
+.form h2 {
+  padding: 10px 0px;
+}
+
+.image {
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+input,
+textarea {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #2652899f;
+  background-color: transparent;
+  width: 100%;
+  font-size: 10px;
+  color: black;
+  font-size: 12px;
+}
+input:focus,
+textarea:focus {
+  border-color: #87bdd8;
+}
+
+.form button {
+  padding: 10px 10px;
+  background-color: #265289;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 20px 10px 10px;
+}
+.form button:first-of-type {
+  padding: 10px 10px;
+  background-color: #2652899f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 5px;
+}
+.form button:hover {
+  background-color: #1b2b3f9f;
+  transition: all 1s;
+  cursor: pointer;
+}
+.form button:disabled {
+  background-color: #a1a1a1;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+  width: 45%;
+  color: #6e7f62;
+
+  padding: 20px 10px;
+}
+.message h1 {
+  color: #90abb0;
+  padding-bottom: 20px;
+}
+.message p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+.message button {
+  width: 40%;
+  padding: 15px;
+  background-color: #2652899f;
+  color: #eee8e3;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+}
+.message button {
+  width: 40%;
+  padding: 15px;
+  background-color: #6e7f62;
+  color: #eee8e3;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+}
+
+.errorMessage {
+  background-color: red;
+  color: white;
+  padding: 14px;
+  font-size: 14px;
+  text-align: center;
+}
+@media (hover: hover) {
+  .message button:hover {
+    transition: all 0.4s ease-in;
+    background-color: #90abb0;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1400px) {
+  .image {
+    width: 30%;
+  }
+}
+@media (max-width: 1200px) {
+  .message button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .message h1 {
+    font-size: 27px;
+  }
+  .message p {
+    font-size: 16px;
+  }
+  .message button {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .image {
+    width: 35%;
+  }
+
+  .form h3 {
+    font-size: 20px;
+  }
+  .form h2 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 70%;
+    color: #6e7f62;
+  }
+  .wrapper p {
+    text-align: center;
+    width: 80%;
+    font-size: 17px;
+    padding-top: 0px;
+  }
+  .form h3 {
+    padding-top: 30px;
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .image {
+    width: 50%;
+  }
+  .message {
+    padding: 5px 10px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .message p {
+    font-size: 17px;
+  }
+  .message button {
+    padding: 12px 5px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .wrapper p {
+    text-align: center;
+  }
+  .image {
+    width: 70%;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 90%;
+    color: #6e7f62;
+  }
+  .form h3 {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px 0px;
+    margin-top: 10px;
+  }
+
+  .form h2 {
+    font-size: 19px;
+    padding: 5px;
+  }
+
+  .message {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .message h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .message p {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+  .message button {
+    padding: 12px 5px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 380px) {
+  .image {
+    width: 80%;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 95%;
+    color: #6e7f62;
+  }
+  .form h3 {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    padding: 20px 0px 0px;
+    margin-top: 10px;
+  }
+
+  .form h2 {
+    font-size: 19px;
+    padding: 5px;
+  }
+
+  .message {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .message h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .message p {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+  .message button {
+    padding: 12px 5px;
+    width: 85%;
+  }
+}
