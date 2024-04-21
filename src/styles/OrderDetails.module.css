@@ -42,7 +42,7 @@
   align-items: flex-start;
   justify-content: space-around;
   gap: 30px;
-  width: 80%;
+  width: 40%;
   color: #2652899f;
 }
 
@@ -87,11 +87,12 @@ textarea:focus {
   background-color: #265289;
   color: white;
   border: none;
+  width: 100%;
   border-radius: 25px;
   font-size: 16px;
-  margin: 20px 10px 10px;
+  margin: 5px;
 }
-.form button:first-of-type {
+/* .form button:first-of-type {
   padding: 10px 10px;
   background-color: #2652899f;
   color: white;
@@ -99,7 +100,7 @@ textarea:focus {
   border-radius: 25px;
   font-size: 16px;
   margin: 5px;
-}
+} */
 .form button:hover {
   background-color: #1b2b3f9f;
   transition: all 1s;

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import OrderPage from "./OrderPage";
 import detailsStyles from "../styles/Details.module.css";
-
+import Cart from "./Cart";
+import { BsCart4 } from "react-icons/bs";
 const Details = () => {
   const location = useLocation();
   const { src, alt, name, price, piece1, piece2 } = location.state;
@@ -17,12 +18,26 @@ const Details = () => {
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
   const [additionalInfo, setAdditionalInfo] = useState("");
+  const [cart, setCart] = useState(() => {
+    // getting stored value of the cart
+    const cart = localStorage.getItem("cart");
+    const initialValue = JSON.parse(cart);
+    return initialValue || "";
+  });
 
-  const proceedWithOrder = () => {
-    setOpenModal(true);
+  useEffect(() => {
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+    console.log(storedCart);
+  }, []); // Only run once on component mount
 
-    console.log(orderInfo);
-  };
+  // Save cart data to local storage whenever cart changes
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   useEffect(() => {
     setOrderInfo({
       item_name: name,
@@ -93,6 +108,25 @@ const Details = () => {
 
   const handleSpecialRequestsInputChange = (event) => {
     setSpecialRequestsInput(event.target.value);
+  };
+  const addToCart = () => {
+    const newItem = {
+      name: name,
+      image: src,
+      price: calculateTotalPrice(),
+      mainQuantity: mainItemQuantity,
+      piece1: piece1?.name,
+      piece2: piece2?.name,
+      piece1Quantity: extraItem1Quantity,
+      piece2Quantity: extraItem2Quantity,
+      color: colorInput,
+      specialRequests: specialRequestsInput,
+    };
+    const updatedCart = [...cart, newItem];
+
+    // Update cart state
+    setCart(updatedCart);
+    setOpenModal(true);
   };
 
   return (
@@ -192,13 +226,20 @@ const Details = () => {
           />
           <h4>Item price: {price}£</h4>
           <h4>Total price: {calculateTotalPrice()}£</h4>
-
-          <button
-            className={detailsStyles.orderButton}
-            onClick={() => proceedWithOrder()}
-          >
-            Proceed
-          </button>
+          <div className={detailsStyles.orderButtons}>
+            <button
+              className={detailsStyles.orderButton}
+              onClick={() => addToCart()}
+            >
+              Add
+            </button>
+            <div
+              className={detailsStyles.cartButton}
+              onClick={() => setOpenModal(true)}
+            >
+              Go to cart <BsCart4 />
+            </div>
+          </div>
           <p>
             Toys come with their accessories, but you have the option to add
             extra accessories in different colors.
@@ -206,13 +247,18 @@ const Details = () => {
         </div>
       </div>
       {openModal && (
-        <OrderPage
+        // <OrderPage
+        //   setOpenModal={setOpenModal}
+        //   setCustomer={setCustomer}
+        //   setAddress={setAddress}
+        //   setEmail={setEmail}
+        //   setAdditionalInfo={setAdditionalInfo}
+        //   orderInfo={orderInfo}
+        // />
+        <Cart
+          cartItems={cart}
           setOpenModal={setOpenModal}
-          setCustomer={setCustomer}
-          setAddress={setAddress}
-          setEmail={setEmail}
-          setAdditionalInfo={setAdditionalInfo}
-          orderInfo={orderInfo}
+          totalPrice={calculateTotalPrice()}
         />
       )}
     </main>

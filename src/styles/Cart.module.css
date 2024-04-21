@@ -1,0 +1,63 @@
+.cartContainer {
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.itemsContainer img {
+  width: 80px;
+}
+.itemContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 15px 0px;
+}
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  justify-content: flex-start;
+}
+.userForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+  justify-content: center;
+}
+.totalPrice {
+  margin: 10px;
+}
+.userForm button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #265289;
+  color: white;
+  margin: 0 auto;
+  width: 80%;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.closeButton {
+  width: 2%;
+  height: 30px;
+  cursor: pointer;
+}
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  padding: 14px;
+  font-size: 14px;
+  text-align: center;
+}
