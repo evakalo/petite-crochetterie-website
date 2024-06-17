@@ -225,19 +225,19 @@ const Details = () => {
             onChange={handleSpecialRequestsInputChange}
           />
           <h4>Item price: {price}£</h4>
-          <h4>Total price: {calculateTotalPrice()}£</h4>
+          {/* <h4>Total price: {calculateTotalPrice()}£</h4> */}
           <div className={detailsStyles.orderButtons}>
             <button
               className={detailsStyles.orderButton}
               onClick={() => addToCart()}
             >
-              Add
+              Add to cart
             </button>
             <div
               className={detailsStyles.cartButton}
               onClick={() => setOpenModal(true)}
             >
-              Go to cart <BsCart4 />
+              Open cart <BsCart4 />
             </div>
           </div>
           <p>
@@ -257,6 +257,7 @@ const Details = () => {
         // />
         <Cart
           cartItems={cart}
+          setCart={setCart}
           setOpenModal={setOpenModal}
           totalPrice={calculateTotalPrice()}
         />

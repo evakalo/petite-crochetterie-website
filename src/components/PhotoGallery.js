@@ -267,7 +267,7 @@ const PhotoGallery = () => {
                 ""
               )}
             </div>
-            <Link
+            {/* <Link
               to={`/details/${photo.id}`}
               state={{
                 src: photo.src,
@@ -279,7 +279,7 @@ const PhotoGallery = () => {
               }}
             >
               detalji
-            </Link>
+            </Link> */}
           </div>
         ))}
       </div>

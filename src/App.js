@@ -13,6 +13,8 @@ import Footer from "./components/Footer";
 import Terms from "./components/Terms";
 import Details from "./components/Details";
 import OrderPage from "./components/OrderPage";
+import VideoComponent from "./components/Video";
+
 function App() {
   return (
     <>
@@ -27,6 +29,7 @@ function App() {
         <Route exact path="/order" element={<OrderPage />} />
 
         <Route path="/terms" element={<Terms />} />
+        <Route path="/video" element={<VideoComponent />} />
       </Routes>
       <Footer />{" "}
     </>

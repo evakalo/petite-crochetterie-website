@@ -7,6 +7,7 @@ const Cart = ({
   handleChange,
   handleSubmit,
   setOpenModal,
+  setCart,
 }) => {
   const [customer, setCustomer] = useState("");
   const [email, setEmail] = useState("");
@@ -55,6 +56,11 @@ const Cart = ({
         break;
     }
   };
+  const handleRemoveItem = (index) => {
+    const updatedCart = cartItems.filter((_, i) => i !== index);
+    setCart(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
 
   return (
     <div className={cartStyles.cartContainer}>
@@ -73,6 +79,7 @@ const Cart = ({
               {item.piece1Quantity > 0 ? <h5>{item.piece1}</h5> : ""}
               {item.piece2Quantity > 0 ? <h5>{item.piece2}</h5> : ""}
               <h5>Price: {item.price}£</h5>
+              <button onClick={() => handleRemoveItem(index)}>Remove</button>
             </div>
           </div>
         ))}{" "}
